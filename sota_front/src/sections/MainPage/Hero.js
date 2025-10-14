@@ -14,7 +14,7 @@ function Hero() {
                 </p>
                 <button className="hero__cta">
                     <img src={cta} alt="" className="hero__cta-img"/>
-                    Обусдить проект
+                    Обсудить проект
                 </button>
             </div>
             <div className="hero__footer">
