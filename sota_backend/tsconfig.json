@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Версия JS, в которую компилировать
+    "module": "commonjs", // Формат модулей для Node.js
+    "strict": true, // Строгая типизация (лучшая практика: ловит ошибки рано)
+    "esModuleInterop": true, // Для совместимости с ES-модулями
+    "skipLibCheck": true, // Ускоряет компиляцию
+    "forceConsistentCasingInFileNames": true, // Избегает проблем с регистром файлов
+    "outDir": "./dist", // Папка для скомпилированного JS
+    "rootDir": "./src" // Папка с исходным TS-кодом
+  },
+  "include": ["src/**/*"], // Какие файлы компилировать
+  "exclude": ["node_modules"] // Что игнорировать
+}
