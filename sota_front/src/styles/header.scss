@@ -1,0 +1,46 @@
+.header{
+  display: flex;
+  align-items: center;
+
+
+  &__nav__list{
+    display: flex;
+    gap: 182px;
+    &-item{
+      color: white;
+      font-size: var(--font-size-small);
+      position: relative;
+    }
+  }
+
+  &__logo{
+    margin: 0 472px 0 218px;
+    z-index: 2;
+  }
+
+  &__cta{
+    font-size: 24px;
+    color: black;
+    background-color: white;
+    padding: 0 55px;
+    position: relative;
+
+
+    & span:first-child{
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      border: 127.8px solid transparent;
+      border-bottom: 20px solid white;
+      cursor: default;
+    }
+    & span:last-child{
+      position: absolute;
+      left: 0;
+      top: 100%;
+      border: 127.8px solid transparent;
+      border-top: 20px solid white;
+      cursor: default;
+    }
+  }
+}
