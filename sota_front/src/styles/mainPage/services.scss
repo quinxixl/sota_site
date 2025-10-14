@@ -1,0 +1,116 @@
+.services {
+  text-align: center;
+  margin-top: 20px;
+
+  &__title {
+    font-size: var(--font-medium);
+  }
+
+  &__subtitle {
+    font-size: 29px;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin: 27px 0 35px 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    height: 672px;
+    border: 1px solid white;
+    font-family: var(--font-fam);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    min-width: 200px;
+    max-width: 100%;
+    transition: flex 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
+
+    &:hover {
+      flex: 2;
+      z-index: 2;
+    }
+
+    &-title {
+      font-size: var(--font-normal);
+      margin-top: 300px;
+      transition: transform 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
+      transform-origin: center;
+    }
+    &:hover &-title {
+      margin-top: 50px;
+    }
+
+    &-price {
+      margin-top: 225px;
+      font-size: 40px;
+      transition: transform 0.4s ease;
+      transform: translateY(0);
+    }
+
+    &:hover &-price {
+      transform: translateY(260px);
+    }
+
+    &-subtitle {
+      font-family: var(--font-fam2);
+      font-size: var(--font-normal);
+    }
+
+    &-date {
+      position: relative;
+      top: 135px;
+      font-size: 40px;
+      transition: top 0.4s ease;
+    }
+
+    &-hover {
+      position: relative;
+      bottom: 180px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: opacity 0.4s ease, transform 0.4s ease, visibility 0s linear 0.4s;
+      text-align: center;
+    }
+
+    &:hover &-hover {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      transition-delay: 0s;
+    }
+  }
+  &__container:hover .services__item:not(:hover) .services__item-title {
+    width: 343px;
+    transform: rotate(90deg);
+    position: relative;
+    right: 25px;
+  }
+
+  &__cta{
+    font-size: 24px;
+    margin-top: 53px;
+    position: relative;
+    width: 222px;
+    height: 100px;
+
+    &-img{
+      top: 0;
+      left: 0;
+      position: absolute;
+    }
+  }
+}
+
+.date{
+  top: 90px
+}

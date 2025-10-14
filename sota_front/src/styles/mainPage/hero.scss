@@ -10,16 +10,16 @@
   }
 
   &__title{
-    font-size: var(--font-medium);
+    font-family: var(--font-fam);
+    font-size: var(--font-normal);
     align-self: center;
     text-align: center;
     position: relative;
-    width: 650px;
   }
 
   &__cta{
     font-size: 24px;
-    margin: 188px 0 100px 0;
+    margin: 188px 0 150px 0;
     position: relative;
     width: 222px;
     height: 100px;
