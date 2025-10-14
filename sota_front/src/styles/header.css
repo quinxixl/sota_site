@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+.header__nav__list {
+  display: flex;
+  gap: 182px;
+}
+.header__nav__list-item {
+  color: white;
+  font-size: var(--font-size-small);
+  position: relative;
+}
+.header__logo {
+  margin: 0 472px 0 218px;
+  z-index: 2;
+}
+.header__cta {
+  font-size: 24px;
+  color: black;
+  background-color: white;
+  padding: 0 55px;
+  position: relative;
+}
+.header__cta span:first-child {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  border: 127.8px solid transparent;
+  border-bottom: 20px solid white;
+  cursor: default;
+}
+.header__cta span:last-child {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  border: 127.8px solid transparent;
+  border-top: 20px solid white;
+  cursor: default;
+}
+
+/*# sourceMappingURL=header.css.map */

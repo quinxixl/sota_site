@@ -1,0 +1,12 @@
+@import './styles/variables.css';
+@import './styles/reset.css';
+@import './styles/header.css';
+@import './styles/mainPage/mainPage.css';
+@import './styles/animations/sota.css';
+
+
+body{
+    background-color: #14110F;
+    color: white;
+    margin: 30px 96px 0 96px;
+}
