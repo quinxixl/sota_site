@@ -1,15 +1,16 @@
 .services {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 125px;
 }
 .services__title {
   font-size: var(--font-medium);
+  font-family: var(--font-fam);
 }
 .services__subtitle {
   font-size: 29px;
   font-family: var(--font-fam);
   font-weight: 300;
-  margin: 27px 0 35px 0;
+  margin: 28px 0 37px 0;
 }
 .services__container {
   display: flex;
@@ -84,6 +85,9 @@
   position: relative;
   right: 25px;
 }
+.services__container:hover .services__item:not(:hover) .services__item-price {
+  font-size: 25px;
+}
 .services__cta {
   font-size: 24px;
   margin-top: 53px;
@@ -95,6 +99,12 @@
   top: 0;
   left: 0;
   position: absolute;
+}
+.services__examples {
+  font-family: var(--font-fam);
+  font-size: var(--font-min);
+  margin-bottom: 45px;
+  text-align: left;
 }
 
 .date {

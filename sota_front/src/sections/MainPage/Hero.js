@@ -7,6 +7,8 @@ function Hero() {
             <div className="hero__container">
                 <p className="hero__title">
                     Наша цель - Ваш рост. <br/>
+                </p>
+                <p className="hero__subtitle">
                     Мы создаем безупречную<br/>
                     техническую основу и визуал,<br/>
                     который ковертирует<br/>

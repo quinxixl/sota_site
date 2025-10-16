@@ -20,7 +20,7 @@ function Header() {
             <img src={logo} alt="SOTA" className="header__logo"/>
             <button className="header__cta">
                 <span></span>
-                начать проект
+                <p className="header__cta-title">начать проект</p>
                 <span></span>
             </button>
         </header>

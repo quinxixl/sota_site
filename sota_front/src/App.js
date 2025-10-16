@@ -2,7 +2,6 @@ import './index.css';
 import Header from "./components/UI/Header";
 import MainPage from './pages/MainPage'
 import Sota from "./animations/Sota";
-import Services from "./sections/MainPage/Services";
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
         />
         <Header />
         <MainPage />
-        <Services />
+
     </div>
 );
 }

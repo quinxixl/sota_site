@@ -1,36 +1,39 @@
 .header{
   display: flex;
   align-items: center;
-
+  font-family: var(--font-fam);
 
   &__nav__list{
     display: flex;
-    gap: 182px;
+    gap: 164px;
     &-item{
       color: white;
-      font-size: var(--font-size-small);
+      font-size: 20px;
       position: relative;
     }
   }
 
   &__logo{
-    margin: 0 472px 0 218px;
+    margin: 0 535px 0 121px;
     z-index: 2;
   }
 
   &__cta{
-    font-size: 24px;
     color: black;
     background-color: white;
-    padding: 0 55px;
+    padding: 13.5px 14.5px;
     position: relative;
 
+    &-title{
+      font-size: 24px;
+
+    }
 
     & span:first-child{
       position: absolute;
       bottom: 100%;
       left: 0;
-      border: 127.8px solid transparent;
+      border: 121px solid transparent;
       border-bottom: 20px solid white;
       cursor: default;
     }
@@ -38,7 +41,7 @@
       position: absolute;
       left: 0;
       top: 100%;
-      border: 127.8px solid transparent;
+      border: 121px solid transparent;
       border-top: 20px solid white;
       cursor: default;
     }

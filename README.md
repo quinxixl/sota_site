@@ -4,6 +4,7 @@
 Для начала открываем терминал в VS Code
 Вводим команды поочередно:
 ```bash
+git fetch origin
 cd sota_front
 npm run start
 ```

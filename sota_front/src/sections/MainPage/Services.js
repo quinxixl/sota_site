@@ -112,6 +112,11 @@ function Services() {
                 <img src={cta} alt="" className="services__cta-img"/>
                 <span>Заказать</span>
             </button>
+            <p className="services__examples">
+                <a href="#">
+                    Примеры
+                </a>
+            </p>
         </div>
     )
 }

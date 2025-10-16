@@ -1,25 +1,36 @@
 .hero{
-  margin-top: 160px;
-  margin-bottom: 0;
+  display: grid;
+  margin-top: 219px;
+  margin-bottom: 35px;
   padding: 0;
+  height: 65vh;
 
   &__container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
   }
 
   &__title{
     font-family: var(--font-fam);
     font-size: var(--font-normal);
-    align-self: center;
-    text-align: center;
+    align-self: flex-start;
     position: relative;
   }
 
+  &__subtitle{
+    font-family: var(--font-fam2);
+    font-size: 32px;
+    font-weight: lighter;
+    position: relative;
+    align-self: flex-start;
+  }
+
   &__cta{
-    font-size: 24px;
-    margin: 188px 0 150px 0;
+    font-family: var(--font-fam);
+    font-size: 16px;
+    align-self: flex-start;
     position: relative;
     width: 222px;
     height: 100px;
@@ -35,7 +46,10 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
-
+    align-self: end;
+    margin-top: 180px;
+    font-family: var(--font-fam);
+    font-size: var(--font-min);
 
     &-copyright{
       margin-left: 9%;
