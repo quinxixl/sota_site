@@ -70,7 +70,7 @@
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
-  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0s linear 0.4s;
+  transition: opacity 0.1s ease, transform 0.1s ease, visibility 0s linear 0.1s;
   text-align: center;
 }
 .services__item:hover .services__item-hover {

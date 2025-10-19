@@ -16,6 +16,12 @@
   font-size: var(--font-normal);
   align-self: flex-start;
   position: relative;
+  background: linear-gradient(90deg, #FFFFFF 0%, #FFA96A 25%, #FFFFFF 50%, #FFA96A 75%, #FFFFFF 100%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3.5s linear infinite;
 }
 .hero__subtitle {
   font-family: var(--font-fam2);
@@ -23,6 +29,12 @@
   font-weight: lighter;
   position: relative;
   align-self: flex-start;
+  background: linear-gradient(90deg, #FFFFFF 0%, #FFA96A 25%, #FFFFFF 50%, #FFA96A 75%, #FFFFFF 100%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3.5s linear infinite;
 }
 .hero__cta {
   font-family: var(--font-fam);
@@ -49,6 +61,12 @@
 .hero__footer-copyright {
   margin-left: 9%;
   position: relative;
+  background: linear-gradient(90deg, #FFFFFF 0%, #FFA96A 25%, #FFFFFF 50%, #FFA96A 75%, #FFFFFF 100%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3.5s linear infinite;
 }
 .hero__footer-links {
   display: flex;
@@ -57,6 +75,28 @@
 }
 .hero__footer-details {
   position: relative;
+  transition: all 0.3s ease;
+}
+.hero__footer-details:hover {
+  color: #ff984d;
+  transform: translateY(-2px);
+  text-shadow: 0 0 8px rgb(255, 169, 106);
+}
+
+.hero__footer-link {
+  transition: all 0.3s ease;
+}
+
+.hero__footer-link:hover {
+  color: #ff984d;
+  transform: translateY(-2px);
+  text-shadow: 0 0 8px rgb(255, 169, 106);
+}
+
+@keyframes shine {
+  to {
+    background-position: -200% center;
+  }
 }
 
 /*# sourceMappingURL=hero.css.map */

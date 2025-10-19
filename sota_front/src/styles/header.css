@@ -11,6 +11,26 @@
   color: white;
   font-size: 20px;
   position: relative;
+  transition: all 0.3s ease;
+}
+.header__nav__list-item:hover {
+  color: #ff984d;
+  transform: translateY(-2px);
+  text-shadow: 0 0 8px rgb(255, 169, 106);
+}
+.header__nav__list-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0.5px;
+  background: #FF7514;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+.header__nav__list-item:hover::after {
+  width: 100%;
 }
 .header__logo {
   margin: 0 535px 0 121px;
