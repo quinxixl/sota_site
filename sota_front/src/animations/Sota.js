@@ -1,15 +1,16 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
 const Sota = ({
-                  borderColor = '#999',
+                  borderColor = '#333',
                   hexSize = 40,
-                  hoverFillColor = '#222',
+                  hoverFillColor = '#FF7514',
                   gapX = 4,
                   gapY = 4,
                   className = ''
               }) => {
     const canvasRef = useRef(null);
     const hoveredHex = useRef(null);
+    const [activatedHexes, setActivatedHexes] = useState(new Set());
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -21,7 +22,7 @@ const Sota = ({
             drawGrid();
         };
 
-        const drawHex = (x, y, size, strokeColor, fillColor = null) => {
+        const drawHex = (x, y, size, strokeColor = null, fillColor = null) => {
             const angleStep = Math.PI / 3;
             ctx.beginPath();
             for (let i = 0; i < 6; i++) {
@@ -38,8 +39,10 @@ const Sota = ({
                 ctx.fill();
             }
 
-            ctx.strokeStyle = strokeColor;
-            ctx.stroke();
+            if (strokeColor) {
+                ctx.strokeStyle = strokeColor;
+                ctx.stroke();
+            }
         };
 
         const drawGrid = () => {
@@ -54,12 +57,19 @@ const Sota = ({
                     const x = col * horizDist + ((row % 2) * horizDist) / 2 + gapX;
                     const y = row * vertDist + gapY;
 
-                    const isHovered =
-                        hoveredHex.current &&
-                        hoveredHex.current.col === col &&
-                        hoveredHex.current.row === row;
+                    const isHovered = hoveredHex.current?.col === col && hoveredHex.current?.row === row;
+                    const isActivated = activatedHexes.has(`${col},${row}`);
 
-                    drawHex(x, y, hexSize, borderColor, isHovered ? hoverFillColor : null);
+                    let fillColor = null;
+                    let strokeColor = null;
+
+                    if (isHovered) {
+                        fillColor = hoverFillColor;
+                    } else if (isActivated) {
+                        strokeColor = borderColor;
+                    }
+
+                    drawHex(x, y, hexSize, strokeColor, fillColor);
                 }
             }
         };
@@ -75,6 +85,11 @@ const Sota = ({
 
             const col = Math.floor(mouseX / horizDist);
             const row = Math.floor(mouseY / vertDist);
+
+            const hexKey = `${col},${row}`;
+            if (!activatedHexes.has(hexKey)) {
+                setActivatedHexes(prev => new Set([...prev, hexKey]));
+            }
 
             hoveredHex.current = { col, row };
             drawGrid();
@@ -96,7 +111,7 @@ const Sota = ({
             canvas.removeEventListener('mousemove', handleMouseMove);
             canvas.removeEventListener('mouseleave', handleMouseLeave);
         };
-    }, [borderColor, hoverFillColor, hexSize, gapX, gapY]); // добавлены gapX и gapY в зависимости
+    }, [borderColor, hoverFillColor, hexSize, gapX, gapY, activatedHexes]);
 
     return <canvas ref={canvasRef} className={`sota-canvas ${className}`}></canvas>;
 };

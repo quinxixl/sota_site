@@ -8,3 +8,5 @@ function Lenis({children}) {
         </div>
     )
 }
+
+export default Lenis
