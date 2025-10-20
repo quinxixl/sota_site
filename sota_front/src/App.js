@@ -5,7 +5,7 @@ import Sota from "./animations/Sota";
 
 function App() {
   return (
-    <div className="app">
+    <div className="App">
         <Sota
             hexSize={25}
             borderColor="#333"

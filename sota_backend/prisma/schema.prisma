@@ -14,9 +14,9 @@ datasource db {
 }
 
 model Case {
-  id Int @id @default(autoincrement())
-  img_url String
-  case_desc Json
+  id         Int    @id @default(autoincrement())
+  logo_url   String
+  design_url String
 
   @@map("cases")
 }

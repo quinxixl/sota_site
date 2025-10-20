@@ -1,15 +1,15 @@
-.hero {
-  display: grid;
-  margin-top: 219px;
-  margin-bottom: 35px;
-  padding: 0;
-  height: 65vh;
-}
 .hero__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
+}
+.hero__container-main {
+  display: grid;
+  margin-top: 219px;
+  margin-bottom: 35px;
+  padding: 0;
+  height: 65vh;
 }
 .hero__title {
   pointer-events: none;

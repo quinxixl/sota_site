@@ -33,9 +33,9 @@ router.get('/:id', async (req, res) => {
 })
 
 router.post('/', async (req, res) => {
-    const {img_url, case_desc} = req.body
+    const {logo_url, design_url} = req.body
     if (req.statusCode === 400) {
-        console.log(img_url, case_desc)
+        console.log(logo_url, design_url)
 
     }
 
@@ -43,8 +43,8 @@ router.post('/', async (req, res) => {
     try {
         const newCase = await prisma.case.create({
             data : {
-                img_url: img_url, 
-                case_desc: case_desc
+                logo_url: logo_url,
+                design_url: design_url,
             }
         })
         res.status(201).json(newCase)
@@ -53,14 +53,14 @@ router.post('/', async (req, res) => {
         res.status(500).json({error : "Can't create case"})
     }
 
-    if (!img_url || !case_desc) {
+    if (!logo_url || !design_url) {
         return res.status(400).json({error : "Image url and case description required"})
     }
 })
 
 router.put('/:id', async (req, res) => {
     const {id} = req.params
-    const {img_url, case_desc} = req.body
+    const {logo_url, design_url} = req.body
 
     try {
         const updateCase = await prisma.case.update({
@@ -68,8 +68,8 @@ router.put('/:id', async (req, res) => {
                 id: parseInt(id)
             },
             data: {
-                ...(img_url && { img_url }),
-                ...(case_desc && { case_desc })
+                ...(logo_url && { logo_url }),
+                ...(design_url && { design_url })
             }
         })
 
