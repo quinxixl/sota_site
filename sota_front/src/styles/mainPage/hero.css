@@ -12,6 +12,7 @@
   gap: 50px;
 }
 .hero__title {
+  pointer-events: none;
   font-family: var(--font-fam);
   font-size: var(--font-normal);
   align-self: flex-start;
@@ -24,6 +25,7 @@
   animation: shine 3.5s linear infinite;
 }
 .hero__subtitle {
+  pointer-events: none;
   font-family: var(--font-fam2);
   font-size: 32px;
   font-weight: lighter;
@@ -48,6 +50,10 @@
   top: 0;
   left: 0;
   position: absolute;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  width: 222px;
+  height: 100px;
+  pointer-events: none;
 }
 .hero__footer {
   display: flex;

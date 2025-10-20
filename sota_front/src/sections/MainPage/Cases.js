@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from "react";
 import request from "../../scripts/request";
+import cta from "../../icons/cta.svg";
+import sotaSvg from "../../icons/sota.svg";
 
 function CasesPage(){
     const [requests, setRequests] = useState([]);
@@ -8,10 +10,26 @@ function CasesPage(){
             request(url, setRequests)
     }, [])
     return (
-        <div>
-            {requests.map((item, index) => (
-                <img key={index} src={`http://localhost:3000${item.img_url}`}  />
+        <div className="cases">
+            <p className="cases__title">Кейсы</p>
+            <div className="cases__container">
+                {requests.map((item, index) => (
+                    <div key={index} className="cases__item">
+                        <img src={sotaSvg} alt="" className="cases__item-sota"/>
+                        <img src={`${item.design__url}`} alt="" className="cases__item-design"/>
+                        <img src={`${item.logo__url}`} alt="" className="cases__item-logo"/>
+                    </div>
                 ))}
+            </div>
+            <button className="services__cta">
+                <img src={cta} alt="" className="services__cta-img"/>
+                <span>Больше кейсов</span>
+            </button>
+            <p className="cases__about">
+                <a href="#">
+                    О команде
+                </a>
+            </p>
         </div>
     )
 }
