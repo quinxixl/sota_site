@@ -46,7 +46,6 @@ const Sota = ({
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
             const hexH = Math.sqrt(3) * hexSize;
-            const hexW = 2 * hexSize;
             const horizDist = 1.5 * hexSize + gapX * Math.sqrt(3);
             const vertDist = hexH * 0.5 + gapY;
 
