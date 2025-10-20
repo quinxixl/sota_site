@@ -1,18 +1,21 @@
 .hero{
-  display: grid;
-  margin-top: 219px;
-  margin-bottom: 35px;
-  padding: 0;
-  height: 65vh;
-
   &__container{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
+
+    &-main{
+      display: grid;
+      margin-top: 219px;
+      margin-bottom: 35px;
+      padding: 0;
+      height: 65vh;
+    }
   }
 
   &__title{
+    pointer-events: none;
     font-family: var(--font-fam);
     font-size: var(--font-normal);
     align-self: flex-start;
@@ -35,6 +38,7 @@
 
 
   &__subtitle{
+    pointer-events: none;
     font-family: var(--font-fam2);
     font-size: 32px;
     font-weight: lighter;
