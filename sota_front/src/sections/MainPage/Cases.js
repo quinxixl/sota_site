@@ -16,8 +16,8 @@ function CasesPage(){
                 {requests.map((item, index) => (
                     <div key={index} className="cases__item">
                         <img src={sotaSvg} alt="" className="cases__item-sota"/>
-                        <img src={`${item.design__url}`} alt="" className="cases__item-design"/>
-                        <img src={`${item.logo__url}`} alt="" className="cases__item-logo"/>
+                        <img src={`${item.design_url}`} alt="" className="cases__item-design"/>
+                        <img src={`${item.logo_url}`} alt="" className="cases__item-logo"/>
                     </div>
                 ))}
             </div>

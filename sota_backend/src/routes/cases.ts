@@ -39,7 +39,6 @@ router.post('/', async (req, res) => {
 
     }
 
-
     try {
         const newCase = await prisma.case.create({
             data : {
