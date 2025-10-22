@@ -17,7 +17,7 @@ function Header() {
                     </a>
                 </ul>
             </nav>
-            <img src={logo} alt="SOTA" className="header__logo"/>
+            <img src={logo} alt="STA" className="header__logo"/>
             <a className="header__cta" href="/application">
                 <span></span>
                 <p className="header__cta-title">начать проект</p>

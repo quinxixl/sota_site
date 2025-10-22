@@ -1,0 +1,83 @@
+.application__title {
+  font-family: var(--font-fam);
+  font-size: 96px;
+  text-transform: uppercase;
+  margin-top: 62px;
+}
+.application__form__question {
+  font-family: var(--font-fam);
+  font-size: 36px;
+  margin-left: 730px;
+  text-transform: lowercase;
+  font-weight: 300;
+}
+.application__form__question__2 {
+  font-family: var(--font-fam);
+  margin-top: 122px;
+  font-size: 36px;
+  margin-left: 730px;
+  text-transform: lowercase;
+  font-weight: 300;
+}
+.application__form__container {
+  margin-left: 730px;
+  margin-top: 30px;
+}
+.application__form__container__grid {
+  display: grid;
+  grid-template-columns: 448px 448px;
+  grid-template-rows: 40px 40px;
+  grid-column-gap: 102px;
+  grid-row-gap: 42px;
+}
+.application__form__input {
+  margin-top: 30px;
+  margin-left: 730px;
+  border-bottom: 2px solid white;
+  width: 998px;
+  height: 40px;
+  color: white;
+  font-family: var(--font-fam2);
+  font-size: 24px;
+}
+.application__form__input::placeholder {
+  font-family: var(--font-fam2);
+  font-size: 24px;
+  color: white;
+}
+.application__form__input__2 {
+  width: 448px;
+  height: 40px;
+  border-bottom: 2px solid white;
+  color: white;
+  font-family: var(--font-fam2);
+  font-size: 24px;
+}
+.application__form__input__2::placeholder {
+  color: white;
+  font-family: var(--font-fam2);
+  font-size: 24px;
+}
+.application__form__input__3 {
+  margin-top: 42px;
+  margin-left: 730px;
+  border-bottom: 2px solid white;
+  width: 998px;
+  height: 40px;
+  color: white;
+  font-family: var(--font-fam2);
+  font-size: 24px;
+}
+.application__form__input__3::placeholder {
+  color: white;
+  font-family: var(--font-fam2);
+  font-size: 24px;
+}
+.application__privacy_policy {
+  font-family: var(--font-fam2);
+  font-size: 16px;
+  margin-left: 730px;
+  margin-top: 100px;
+}
+
+/*# sourceMappingURL=application.css.map */
