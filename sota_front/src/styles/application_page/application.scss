@@ -1,0 +1,101 @@
+.application {
+  &__title{
+    font-family: var(--font-fam);
+    font-size: 96px;
+    text-transform: uppercase;
+    margin-top: 62px;
+  }
+
+  &__form {
+    &__question {
+      font-family: var(--font-fam);
+      font-size: 36px;
+      margin-left: 730px;
+      text-transform: lowercase;
+      font-weight: 300;
+
+      &__2 {
+        font-family: var(--font-fam);
+        margin-top: 122px;
+        font-size: 36px;
+        margin-left: 730px;
+        text-transform: lowercase;
+        font-weight: 300;
+      }
+
+      }
+
+      &__container {
+        margin-left: 730px;
+        margin-top: 30px;
+
+        &__grid {
+
+          display: grid;
+          grid-template-columns: 448px 448px;
+          grid-template-rows: 40px 40px;
+          grid-column-gap: 102px;
+          grid-row-gap: 42px;
+        }
+      }
+
+
+
+
+    &__input {
+      margin-top: 30px;
+      margin-left: 730px;
+      border-bottom: 2px solid white;
+      width: 998px;
+      height: 40px;
+      color: white;
+      font-family: var(--font-fam2);
+      font-size: 24px;
+
+      &::placeholder {
+        font-family: var(--font-fam2);
+        font-size: 24px;
+        color: white;
+      }
+
+      &__2 {
+        width: 448px;
+        height: 40px;
+        border-bottom: 2px solid white;
+        color: white;
+        font-family: var(--font-fam2);
+        font-size: 24px;
+
+        &::placeholder {
+          color: white;
+          font-family: var(--font-fam2);
+          font-size: 24px;
+
+        }
+      }
+
+      &__3{
+        margin-top: 42px;
+        margin-left: 730px;
+        border-bottom: 2px solid white;
+        width: 998px;
+        height: 40px;
+        color: white;
+        font-family: var(--font-fam2);
+        font-size: 24px;
+
+        &::placeholder {
+          color: white;
+          font-family: var(--font-fam2);
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  &__privacy_policy {
+    font-family: var(--font-fam2);
+    font-size: 16px;
+    margin-left: 730px;
+    margin-top: 100px;
+  }
+}
