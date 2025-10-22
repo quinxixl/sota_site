@@ -18,11 +18,11 @@ function Header() {
                 </ul>
             </nav>
             <img src={logo} alt="SOTA" className="header__logo"/>
-            <button className="header__cta">
+            <a className="header__cta" href="/application">
                 <span></span>
                 <p className="header__cta-title">начать проект</p>
                 <span></span>
-            </button>
+            </a>
         </header>
     )
 }

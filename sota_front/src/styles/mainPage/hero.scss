@@ -60,6 +60,9 @@
   }
 
   &__cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: var(--font-fam);
     font-size: 16px;
     align-self: flex-start;

@@ -27,10 +27,10 @@ function Hero() {
                         который ковертирует<br/>
                         посетителей в прибыль.<br/>
                     </p>
-                    <button className="hero__cta">
+                    <a className="hero__cta" href="/application">
                         <img src={cta} alt="" className="hero__cta-img"/>
-                        Обсудить проект
-                    </button>
+                        <p className="hero__cta-title">Обсудить проект</p>
+                    </a>
                 </div>
                 <div className="hero__footer">
                     <a href="#" className="hero__footer-details">
