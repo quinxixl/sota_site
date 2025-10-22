@@ -5,6 +5,7 @@ import CasesPage from "../sections/MainPage/Cases";
 
 function MainPage() {
     return (
+
         <div className="mainPage">
             <Hero />
             <Services />

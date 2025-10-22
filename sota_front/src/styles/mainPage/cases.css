@@ -1,0 +1,28 @@
+.cases__container {
+  display: flex;
+  gap: 60px;
+}
+.cases__item {
+  position: relative;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  width: 510px;
+  height: 585px;
+}
+.cases__item-sota {
+  width: 530px;
+  z-index: 2;
+}
+.cases__item-logo {
+  z-index: 1;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+}
+.cases__item-design {
+  position: absolute;
+  left: 5px;
+  width: 500px;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=cases.css.map */

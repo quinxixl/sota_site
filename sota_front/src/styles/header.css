@@ -44,6 +44,7 @@
 }
 .header__cta-title {
   font-size: 24px;
+  color: #000;
 }
 .header__cta span:first-child {
   position: absolute;
