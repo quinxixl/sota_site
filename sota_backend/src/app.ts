@@ -3,6 +3,7 @@ import { BACK_PORT } from './config';
 import { PrismaClient } from '@prisma/client';
 import cors from 'cors'
 import caseRoutes from './routes/cases'
+import applicationRoute from './routes/application'
 
 const app = express();
 const PORT = BACK_PORT;
@@ -13,6 +14,7 @@ app.use(express.json())
 
 app.use('/api/cases', caseRoutes)
 app.use('/img', express.static('img'));
+app.use('api/application', applicationRoute )
 
 app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'Server is working!' })
