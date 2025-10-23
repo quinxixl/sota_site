@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../sections/MainPage/Hero";
 import Services from "../sections/MainPage/Services";
 import CasesPage from "../sections/MainPage/Cases";
+import Footer from "../components/UI/Footer";
 
 function MainPage() {
     return (
@@ -10,6 +11,7 @@ function MainPage() {
             <Hero />
             <Services />
             <CasesPage />
+            <Footer />
         </div>
     )
 }

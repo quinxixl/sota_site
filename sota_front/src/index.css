@@ -6,6 +6,7 @@
 @import './styles/mainPage/mainPage.css';
 @import './styles/animations/sota.css';
 @import './styles/application_page/application.css';
+@import './styles/footer.css';
 
 body{
     background-color: #14110F;
