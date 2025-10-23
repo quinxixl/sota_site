@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../../icons/logo.png";
+import logo from "../../icons/logo.svg";
+import ctaWhite from "../../icons/ctaWhite.svg"
 
 function Header() {
     return (
@@ -19,9 +20,8 @@ function Header() {
             </nav>
             <img src={logo} alt="STA" className="header__logo"/>
             <a className="header__cta" href="/application">
-                <span></span>
-                <p className="header__cta-title">начать проект</p>
-                <span></span>
+                <img src={ctaWhite} alt="" className="header__cta-img"/>
+                <span className="header__cta-title">начать проект</span>
             </a>
         </header>
     )
