@@ -1,4 +1,24 @@
 .application {
+  &__privacy{
+    display: flex;
+    justify-content: center;
+    grid-area: privacy;
+  }
+
+
+  &__privacy-policy {
+    font-family: var(--font-fam2);
+    font-size: 13px;
+    margin-top: 13px;
+    color: #898887;
+
+    & a {
+      color: white;
+      text-decoration: underline;
+      text-decoration-color: white;
+    }
+  }
+
   &__title{
     font-family: var(--font-fam);
     font-size: 96px;
@@ -7,50 +27,108 @@
   }
 
   &__form {
-    &__question {
+    &-button-main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      position: relative;
+      grid-area: button-main;
+      align-self: center;
+      margin-top: 28px;
+
+      &-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+
+      &-title{
+        position: absolute;
+        z-index: 3;
+        font-family: var(--font-fam);
+        font-size: 24px;
+        color: black;
+      }
+    }
+
+    &-file_button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 240px;
+      grid-area: button-file;
+      margin-top: 24px;
+
+      &-input{
+        position: absolute;
+        opacity: 0;
+        z-index: 2;
+        width: 240px;
+        height: 74px;
+      }
+
+      &-title{
+        position: absolute;
+        color: black;
+        font-size: 20px;
+        font-family: var(--font-fam);
+      }
+    }
+
+    &-question {
+      width: 998px;
+      grid-area: question;
       font-family: var(--font-fam);
       font-size: 36px;
-      margin-left: 730px;
       text-transform: lowercase;
       font-weight: 300;
 
-      &__2 {
+      &-2 {
         font-family: var(--font-fam);
-        margin-top: 122px;
+        margin-top: 24px;
         font-size: 36px;
-        margin-left: 730px;
         text-transform: lowercase;
         font-weight: 300;
+        grid-area: question-2;
+      }
       }
 
-      }
-
-      &__container {
-        margin-left: 730px;
+      &-container {
         margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
 
-        &__grid {
 
+        &-grid {
           display: grid;
-          grid-template-columns: 448px 448px;
-          grid-template-rows: 40px 40px;
-          grid-column-gap: 102px;
-          grid-row-gap: 42px;
+          grid-template-areas:"question question"
+                              "text text"
+                              "button-file button-file"
+                              "question-2 question-2"
+                              "subname company"
+                              "email phone"
+                              "url url"
+                              "privacy privacy"
+                              "button-main button-main";
+          grid-template-columns: repeat(2, 1fr);
         }
       }
 
 
 
 
-    &__input {
+    &-input {
       margin-top: 30px;
-      margin-left: 730px;
       border-bottom: 2px solid white;
-      width: 998px;
       height: 40px;
       color: white;
       font-family: var(--font-fam2);
       font-size: 24px;
+      grid-area: text;
 
       &::placeholder {
         font-family: var(--font-fam2);
@@ -58,7 +136,7 @@
         color: white;
       }
 
-      &__2 {
+      &-2 {
         width: 448px;
         height: 40px;
         border-bottom: 2px solid white;
@@ -74,15 +152,15 @@
         }
       }
 
-      &__3{
+      &-3{
         margin-top: 42px;
-        margin-left: 730px;
         border-bottom: 2px solid white;
         width: 998px;
         height: 40px;
         color: white;
         font-family: var(--font-fam2);
         font-size: 24px;
+        grid-area: url;
 
         &::placeholder {
           color: white;
@@ -92,18 +170,29 @@
       }
     }
   }
-  &__privacy-policy {
-    font-family: var(--font-fam2);
-    font-size: 13px;
-    margin-left: 882px;
-    margin-top: 13px;
-    color: #898887;
 
-  }
 
-  & a {
-    color: white;
-    text-decoration: underline;
-    text-decoration-color: white;
-  }
+
+}
+
+.subname{
+  grid-area: subname;
+  margin-top: 30px;
+  margin-bottom: 42px;
+}
+
+.company{
+  grid-area: company;
+  margin-top: 30px;
+  margin-bottom: 42px;
+  margin-left: 50px;
+}
+
+.email{
+  grid-area: email;
+}
+
+.phone{
+  grid-area: phone;
+  margin-left: 50px;
 }
