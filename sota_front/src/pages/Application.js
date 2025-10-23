@@ -30,14 +30,11 @@ function Application() {
                         <input type='text' placeholder='url(например, сайт компании)' className='application__form__input__3'  />
                     </form>
                 </div>
-                <p className={'application__privacy_policy'}>нажимая кнопку „отправить”, вы даете
-                    согласие
-                    на обработку персональных данных.
-                    политика обработки данных</p>
+                <p className={'application__privacy-policy'}>нажимая кнопку „отправить”, вы даете <a href='' className={'application__link'}>согласие</a> на обработку персональных данных.<a href={''} className={'application__link'}> политика обработки данных</a></p>
             </div>
         </div>
     )
-};
+}
 
 
 export default Application;

@@ -92,10 +92,18 @@
       }
     }
   }
-  &__privacy_policy {
+  &__privacy-policy {
     font-family: var(--font-fam2);
-    font-size: 16px;
-    margin-left: 730px;
-    margin-top: 100px;
+    font-size: 13px;
+    margin-left: 882px;
+    margin-top: 13px;
+    color: #898887;
+
+  }
+
+  & a {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
   }
 }
