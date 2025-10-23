@@ -1,51 +1,112 @@
+.application__privacy {
+  display: flex;
+  justify-content: center;
+  grid-area: privacy;
+}
+.application__privacy-policy {
+  font-family: var(--font-fam2);
+  font-size: 13px;
+  margin-top: 13px;
+  color: #898887;
+}
+.application__privacy-policy a {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
 .application__title {
   font-family: var(--font-fam);
   font-size: 96px;
   text-transform: uppercase;
   margin-top: 62px;
 }
-.application__form__question {
+.application__form-button-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  position: relative;
+  grid-area: button-main;
+  align-self: center;
+  margin-top: 28px;
+}
+.application__form-button-main-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.application__form-button-main-title {
+  position: absolute;
+  z-index: 3;
   font-family: var(--font-fam);
-  font-size: 36px;
-  margin-left: 730px;
-  text-transform: lowercase;
-  font-weight: 300;
+  font-size: 24px;
+  color: black;
 }
-.application__form__question__2 {
+.application__form-file_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 240px;
+  grid-area: button-file;
+  margin-top: 24px;
+}
+.application__form-file_button-input {
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  width: 240px;
+  height: 74px;
+}
+.application__form-file_button-title {
+  position: absolute;
+  color: black;
+  font-size: 20px;
   font-family: var(--font-fam);
-  margin-top: 122px;
-  font-size: 36px;
-  margin-left: 730px;
-  text-transform: lowercase;
-  font-weight: 300;
 }
-.application__form__container {
-  margin-left: 730px;
-  margin-top: 30px;
-}
-.application__form__container__grid {
-  display: grid;
-  grid-template-columns: 448px 448px;
-  grid-template-rows: 40px 40px;
-  grid-column-gap: 102px;
-  grid-row-gap: 42px;
-}
-.application__form__input {
-  margin-top: 30px;
-  margin-left: 730px;
-  border-bottom: 2px solid white;
+.application__form-question {
   width: 998px;
+  grid-area: question;
+  font-family: var(--font-fam);
+  font-size: 36px;
+  text-transform: lowercase;
+  font-weight: 300;
+}
+.application__form-question-2 {
+  font-family: var(--font-fam);
+  margin-top: 24px;
+  font-size: 36px;
+  text-transform: lowercase;
+  font-weight: 300;
+  grid-area: question-2;
+}
+.application__form-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.application__form-container-grid {
+  display: grid;
+  grid-template-areas: "question question" "text text" "button-file button-file" "question-2 question-2" "subname company" "email phone" "url url" "privacy privacy" "button-main button-main";
+  grid-template-columns: repeat(2, 1fr);
+}
+.application__form-input {
+  margin-top: 30px;
+  border-bottom: 2px solid white;
   height: 40px;
   color: white;
   font-family: var(--font-fam2);
   font-size: 24px;
+  grid-area: text;
 }
-.application__form__input::placeholder {
+.application__form-input::placeholder {
   font-family: var(--font-fam2);
   font-size: 24px;
   color: white;
 }
-.application__form__input__2 {
+.application__form-input-2 {
   width: 448px;
   height: 40px;
   border-bottom: 2px solid white;
@@ -53,37 +114,47 @@
   font-family: var(--font-fam2);
   font-size: 24px;
 }
-.application__form__input__2::placeholder {
+.application__form-input-2::placeholder {
   color: white;
   font-family: var(--font-fam2);
   font-size: 24px;
 }
-.application__form__input__3 {
+.application__form-input-3 {
   margin-top: 42px;
-  margin-left: 730px;
   border-bottom: 2px solid white;
   width: 998px;
   height: 40px;
   color: white;
   font-family: var(--font-fam2);
   font-size: 24px;
+  grid-area: url;
 }
-.application__form__input__3::placeholder {
+.application__form-input-3::placeholder {
   color: white;
   font-family: var(--font-fam2);
   font-size: 24px;
 }
-.application__privacy-policy {
-  font-family: var(--font-fam2);
-  font-size: 13px;
-  margin-left: 882px;
-  margin-top: 13px;
-  color: #898887;
+
+.subname {
+  grid-area: subname;
+  margin-top: 30px;
+  margin-bottom: 42px;
 }
-.application a {
-  color: white;
-  text-decoration: underline;
-  text-decoration-color: white;
+
+.company {
+  grid-area: company;
+  margin-top: 30px;
+  margin-bottom: 42px;
+  margin-left: 50px;
+}
+
+.email {
+  grid-area: email;
+}
+
+.phone {
+  grid-area: phone;
+  margin-left: 50px;
 }
 
 /*# sourceMappingURL=application.css.map */
