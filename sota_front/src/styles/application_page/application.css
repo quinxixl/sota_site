@@ -58,6 +58,7 @@
   z-index: 2;
   width: 240px;
   height: 74px;
+  cursor: pointer;
 }
 .application__form-file_button-title {
   position: absolute;
