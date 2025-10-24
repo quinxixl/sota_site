@@ -1,8 +1,8 @@
 import './index.css'
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MainPage from './pages/MainPage'; // убедитесь, что пути правильные
-import Application from './pages/Application'; // убедитесь, что пути правильные
+import MainPage from './pages/MainPage';
+import Application from './pages/Application';
 
 function App() {
     return (
