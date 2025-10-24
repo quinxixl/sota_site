@@ -14,7 +14,7 @@ app.use(express.json())
 
 app.use('/api/cases', caseRoutes)
 app.use('/img', express.static('img'));
-app.use('api/application', applicationRoute )
+app.use('/api/application', applicationRoute )
 
 app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'Server is working!' })
