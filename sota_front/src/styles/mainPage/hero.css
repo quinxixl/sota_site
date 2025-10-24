@@ -63,7 +63,6 @@
   justify-content: space-between;
   align-items: end;
   align-self: end;
-  margin-top: 180px;
   font-family: var(--font-fam);
   font-size: var(--font-min);
 }
