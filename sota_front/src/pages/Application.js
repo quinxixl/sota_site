@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/UI/Header";
 import ctaWhite from "../icons/ctaWhite.svg";
 import ctaWhiteButton from "../icons/ctaWhiteButton.svg";
+import Footer from "../components/UI/Footer";
 
 function Application() {
     const [form, setForm] = useState({
@@ -32,17 +33,17 @@ function Application() {
         if (!form.email.trim()) {
             error.email = "Пожалуйста напишите ваш email для обратной связи";
         }else if(!/\S+@\S+\.\S+/.test(form.email)){
-            error.email = "Некорректный формат email"
+            error.email = "Некорректный формат email!"
         }
         if (form.phone_number.trim()) {
             if (!/^\+?\d{10,15}$/.test(form.phone_number.replace(/\D/g, ''))) {
-                error.phone_number = "Некорректный формат номера";
+                error.phone_number = "Некорректный формат номера!";
             }
         }
 
         if (form.site_url.trim()) {
             if (!/^https?:\/\/.+\..+/.test(form.site_url)) {
-                error.site_url = "Некорректный формат URL";
+                error.site_url = "Некорректный формат URL!";
             }
         }
 
@@ -156,6 +157,7 @@ function Application() {
                     </form>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

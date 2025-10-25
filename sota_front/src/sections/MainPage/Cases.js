@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import request from "../../scripts/request";
-import cta from "../../icons/cta.svg";
+import cta from "../../icons/services_cta.svg";
 import sotaSvg from "../../icons/sota.svg";
 
 function CasesPage(){
@@ -16,14 +16,14 @@ function CasesPage(){
                 {requests.map((item, index) => (
                     <div key={index} className="cases__item">
                         <img src={sotaSvg} alt="" className="cases__item-sota"/>
-                        <img src={`${item.design_url}`} alt="" className="cases__item-design"/>
+                        <div className="cases__item-design"></div>
                         <img src={`${item.logo_url}`} alt="" className="cases__item-logo"/>
                     </div>
                 ))}
             </div>
             <button className="services__cta">
                 <img src={cta} alt="" className="services__cta-img"/>
-                <span>Больше кейсов</span>
+                <span className="cases__cta-img-title">Больше кейсов</span>
             </button>
             <p className="cases__about">
                 <a href="#">
