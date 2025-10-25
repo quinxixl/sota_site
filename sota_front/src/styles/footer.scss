@@ -1,8 +1,5 @@
 .footer{
-  position: absolute;
-  width: 1728px;
-  height: 96px;
-  bottom: 30px;
+  margin-top: 600px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: end;
@@ -21,13 +18,12 @@
   }
 
   &__socials{
-    width: 287px;
     justify-self: right;
     display: grid;
     grid-template-areas:"inst behance"
                         "youtube telegram"
                         "vk pinterest";
-    grid-column-gap: 0px;
+    grid-column-gap: 83px;
   }
 
 }

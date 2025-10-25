@@ -11,7 +11,6 @@ function MainPage() {
         <div className="mainPage">
             <Hero />
             <Services />
-            <Cases />
             <About />
         </div>
     )

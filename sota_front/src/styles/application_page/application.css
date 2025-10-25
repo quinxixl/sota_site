@@ -161,62 +161,38 @@
   margin-left: 50px;
 }
 
-.error__task-description {
-  margin-top: 61px;
-  margin-left: 568px;
+.error {
   padding: 10px;
   position: absolute;
   border: 2px solid #A91111;
   font-size: 14px;
   font-family: var(--font-fam2);
+}
+.error__task-description {
+  margin-top: 61px;
+  margin-left: 568px;
 }
 .error__fullname {
   margin-top: 289px;
   margin-left: 107px;
-  padding: 10px;
-  position: absolute;
-  border: 2px solid #A91111;
-  font-size: 14px;
-  font-family: var(--font-fam2);
 }
 .error__company-name {
   margin-top: 289px;
   margin-left: 676px;
-  padding: 10px;
-  position: absolute;
-  border: 2px solid #A91111;
-  font-size: 14px;
-  font-family: var(--font-fam2);
 }
 .error__email {
   width: 374px;
   height: 39px;
   margin-top: 375px;
   margin-left: 73px;
-  padding: 10px;
-  position: absolute;
-  text-align: center;
-  border: 2px solid #A91111;
-  font-size: 14px;
-  font-family: var(--font-fam2);
 }
 .error__phone-number {
   margin-top: 371px;
   margin-left: 711px;
-  padding: 10px;
-  position: absolute;
-  border: 2px solid #A91111;
-  font-size: 14px;
-  font-family: var(--font-fam2);
 }
 .error__site-url {
   margin-top: 453px;
   margin-left: 564px;
-  padding: 10px;
-  position: absolute;
-  border: 2px solid #A91111;
-  font-size: 14px;
-  font-family: var(--font-fam2);
 }
 
 /*# sourceMappingURL=application.css.map */

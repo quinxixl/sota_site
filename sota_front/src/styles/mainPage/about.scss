@@ -1,2 +1,97 @@
-.canvas{
+.about{
+  &__title{
+    text-align: center;
+    font-family: var(--font-fam);
+    font-size: var(--font-medium);
+  }
+
+  &__container-subtitle{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+  }
+
+  &__subtitle{
+    font-family: var(--font-fam2);
+    font-size: var(--font-medium);
+
+    &-main{
+      text-align: center;
+      font-family: var(--font-fam2);
+      font-size: 40px;
+      margin-top: 22px;
+    }
+  }
+
+  &__container{
+    position: absolute;
+    left: 0;
+    display: flex;
+    gap: 45px;
+  }
+
+  &__sota{
+    position: relative;
+    width: 608px;
+    transition: all 0.4s ease;
+
+    &-img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: scale 0.5s ease;
+
+      &:hover{
+        scale: 1.2;
+      }
+    }
+
+    &-title{
+      text-align: center;
+      margin-top: 40%;
+      font-family: var(--font-fam);
+      font-size: var(--font-big);
+      transition: margin-top 0.5s ease;
+    }
+
+    &:hover &-title{
+      margin-top: 22%;
+    }
+
+    &-subtitle{
+      text-align: center;
+      margin-top: 13px;
+      font-family: var(--font-fam2);
+      font-size: var(--font-min);
+    }
+
+    &-hover{
+      pointer-events: none;
+      position: absolute;
+      left: 180px;
+      bottom: 10px;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    &:hover &-hover{
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &-point{
+      font-size: 20px;
+
+      list-style-type: square;
+    }
+  }
+}
+
+.design{
+  left:170px;
+}
+
+.frontend{
+  left:165px;
 }

@@ -1,6 +1,6 @@
 .services {
+  margin-top: 48px;
   text-align: center;
-  margin-top: 125px;
 }
 .services__title {
   font-size: var(--font-medium);
@@ -93,7 +93,7 @@
   margin-top: 53px;
   font-family: var(--font-fam);
   position: relative;
-  width: 222px;
+  width: 195px;
   height: 100px;
 }
 .services__cta-img {

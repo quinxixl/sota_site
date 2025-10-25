@@ -1,3 +1,83 @@
+.about__title {
+  text-align: center;
+  font-family: var(--font-fam);
+  font-size: var(--font-medium);
+}
+.about__container-subtitle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+.about__subtitle {
+  font-family: var(--font-fam2);
+  font-size: var(--font-medium);
+}
+.about__subtitle-main {
+  text-align: center;
+  font-family: var(--font-fam2);
+  font-size: 40px;
+  margin-top: 22px;
+}
+.about__container {
+  position: absolute;
+  left: 0;
+  display: flex;
+  gap: 45px;
+}
+.about__sota {
+  position: relative;
+  width: 608px;
+  transition: all 0.4s ease;
+}
+.about__sota-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: scale 0.5s ease;
+}
+.about__sota-img:hover {
+  scale: 1.2;
+}
+.about__sota-title {
+  text-align: center;
+  margin-top: 40%;
+  font-family: var(--font-fam);
+  font-size: var(--font-big);
+  transition: margin-top 0.5s ease;
+}
+.about__sota:hover .about__sota-title {
+  margin-top: 22%;
+}
+.about__sota-subtitle {
+  text-align: center;
+  margin-top: 13px;
+  font-family: var(--font-fam2);
+  font-size: var(--font-min);
+}
+.about__sota-hover {
+  pointer-events: none;
+  position: absolute;
+  left: 180px;
+  bottom: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.about__sota:hover .about__sota-hover {
+  visibility: visible;
+  opacity: 1;
+}
+.about__sota-point {
+  font-size: 20px;
+  list-style-type: square;
+}
 
+.design {
+  left: 170px;
+}
+
+.frontend {
+  left: 165px;
+}
 
 /*# sourceMappingURL=about.css.map */
