@@ -13,7 +13,6 @@ function MainPage() {
             <Services />
             <Cases />
             <About />
-            <Footer />
         </div>
     )
 }

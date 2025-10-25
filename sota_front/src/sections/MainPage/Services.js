@@ -1,5 +1,5 @@
 import React from "react";
-import cta from "../../icons/cta.svg";
+import cta from "../../icons/services_cta.svg";
 
 function Services() {
     return (
@@ -110,7 +110,7 @@ function Services() {
             </div>
             <button className="services__cta">
                 <img src={cta} alt="" className="services__cta-img"/>
-                <span>Заказать</span>
+                <span className='services__cta-img-title'>Заказать</span>
             </button>
             <p className="services__examples">
                 <a href="#">

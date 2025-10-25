@@ -48,7 +48,7 @@
 .services__item-price {
   margin-top: 225px;
   font-size: 40px;
-  transition: transform 0.4s ease;
+  transition: transform 1s ease;
   transform: translateY(0);
 }
 .services__item:hover .services__item-price {
@@ -100,6 +100,11 @@
   top: 0;
   left: 0;
   position: absolute;
+}
+.services__cta-img-title {
+  position: absolute;
+  top: 40px;
+  left: 49px;
 }
 .services__examples {
   font-family: var(--font-fam);
