@@ -7,6 +7,7 @@
 
 
   &__privacy-policy {
+    height: 19px;
     font-family: var(--font-fam2);
     font-size: 13px;
     margin-top: 13px;
@@ -54,6 +55,7 @@
     }
 
     &-file_button{
+
       display: flex;
       justify-content: center;
       align-items: center;
@@ -81,6 +83,7 @@
 
     &-question {
       width: 998px;
+      height: 40px;
       grid-area: question;
       font-family: var(--font-fam);
       font-size: 36px;
@@ -88,6 +91,7 @@
       font-weight: 300;
 
       &-2 {
+        height: 40px;
         font-family: var(--font-fam);
         margin-top: 24px;
         font-size: 36px;
@@ -196,4 +200,44 @@
 .phone{
   grid-area: phone;
   margin-left: 50px;
+}
+
+.error{
+  padding: 10px;
+  position: absolute;
+  border: 2px solid #A91111;
+  font-size: 14px;
+  font-family: var(--font-fam2);
+
+  &__task-description{
+    margin-top: 61px;
+    margin-left: 586-18px;
+  }
+
+  &__fullname{
+    margin-top: 289px;
+    margin-left: 107px;
+  }
+
+  &__company-name{
+    margin-top: 289px;
+    margin-left: 676px;
+  }
+
+  &__email{
+    width: 374px;
+    height: 39px;
+    margin-top: 375px;
+    margin-left: 73px;
+  }
+
+  &__phone-number{
+    margin-top: 371px;
+    margin-left: 711px;
+  }
+
+  &__site-url{
+    margin-top: 453px;
+    margin-left: 564px;
+  }
 }

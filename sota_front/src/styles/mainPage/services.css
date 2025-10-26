@@ -1,6 +1,6 @@
 .services {
+  margin-top: 48px;
   text-align: center;
-  margin-top: 125px;
 }
 .services__title {
   font-size: var(--font-medium);
@@ -48,7 +48,7 @@
 .services__item-price {
   margin-top: 225px;
   font-size: 40px;
-  transition: transform 0.4s ease;
+  transition: transform 1s ease;
   transform: translateY(0);
 }
 .services__item:hover .services__item-price {
@@ -93,13 +93,18 @@
   margin-top: 53px;
   font-family: var(--font-fam);
   position: relative;
-  width: 222px;
+  width: 195px;
   height: 100px;
 }
 .services__cta-img {
   top: 0;
   left: 0;
   position: absolute;
+}
+.services__cta-img-title {
+  position: absolute;
+  top: 40px;
+  left: 49px;
 }
 .services__examples {
   font-family: var(--font-fam);

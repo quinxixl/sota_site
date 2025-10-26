@@ -1,15 +1,21 @@
+.cases__cta-img-title {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
 .cases__container {
-  display: flex;
-  gap: 60px;
+  height: 606px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 600px);
+  grid-template-rows: 606px;
+  grid-column-gap: 60px;
 }
 .cases__item {
   position: relative;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  width: 510px;
-  height: 585px;
+  height: 600px;
 }
 .cases__item-sota {
-  width: 530px;
   z-index: 2;
 }
 .cases__item-logo {
@@ -21,8 +27,19 @@
 .cases__item-design {
   position: absolute;
   left: 5px;
-  width: 500px;
-  z-index: -1;
+  top: 5px;
+  z-index: 0;
+  animation: slide-mask 5s linear alternate infinite;
+  -webkit-mask-image: url(../../icons/sota_png.svg);
+  -webkit-mask-repeat: no-repeat;
+}
+@keyframes slide-mask {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
 }
 
 /*# sourceMappingURL=cases.css.map */

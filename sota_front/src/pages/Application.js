@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/UI/Header";
 import ctaWhite from "../icons/ctaWhite.svg";
 import ctaWhiteButton from "../icons/ctaWhiteButton.svg";
+import Footer from "../components/UI/Footer";
 
 function Application() {
     const [form, setForm] = useState({
@@ -32,23 +33,27 @@ function Application() {
         if (!form.email.trim()) {
             error.email = "Пожалуйста напишите ваш email для обратной связи";
         }else if(!/\S+@\S+\.\S+/.test(form.email)){
-            error.email = "Некорректный формат email"
+            error.email = "Некорректный формат email!"
         }
         if (form.phone_number.trim()) {
             if (!/^\+?\d{10,15}$/.test(form.phone_number.replace(/\D/g, ''))) {
-                error.phone_number = "Некорректный формат номера";
+                error.phone_number = "Некорректный формат номера!";
             }
         }
 
         if (form.site_url.trim()) {
             if (!/^https?:\/\/.+\..+/.test(form.site_url)) {
-                error.site_url = "Некорректный формат URL";
+                error.site_url = "Некорректный формат URL!";
             }
         }
 
         setErrors(error);
 
         return Object.keys(error).length === 0;
+    }
+
+    const onFocusError = (e) => {
+        setErrors(prevErrors => ({ ...prevErrors, [e]: undefined }));
     }
 
     const onChange = (e) => {
@@ -86,6 +91,7 @@ function Application() {
                             placeholder='опишите задачу в свободной форме'
                             className='application__form-input'
                             onChange={onChange}
+                            onFocus={() => onFocusError('task_description')}
                             value={form.task_description}
                         />
                         {errors.task_description && <div className="error__task-description error">{errors.task_description}</div>}
@@ -104,6 +110,7 @@ function Application() {
                             placeholder='фио'
                             className='application__form-input-2 subname'
                             onChange={onChange}
+                            onFocus={() => onFocusError('fullname')}
                             value={form.fullname}
                         />
                         {errors.fullname && <div className="error__fullname error">{errors.fullname}</div>}
@@ -113,6 +120,7 @@ function Application() {
                             placeholder='компания'
                             className='application__form-input-2 company'
                             onChange={onChange}
+                            onFocus={() => onFocusError('company_name')}
                             value={form.company_name}
                         />
                         {errors.company_name && <div className="error__company-name error">{errors.company_name}</div>}
@@ -122,6 +130,7 @@ function Application() {
                             placeholder='e-mail'
                             className='application__form-input-2 email'
                             onChange={onChange}
+                            onFocus={() => onFocusError('email')}
                             value={form.email}
                         />
                         {errors.email && <div className="error__email error">{errors.email}</div>}
@@ -131,6 +140,7 @@ function Application() {
                             placeholder='телефон'
                             className='application__form-input-2 phone'
                             onChange={onChange}
+                            onFocus={() => onFocusError('phone_number')}
                             value={form.phone_number}
                         />
                         {errors.phone_number && <div className="error__phone-number error">{errors.phone_number}</div>}
@@ -140,6 +150,7 @@ function Application() {
                             placeholder='url(например, сайт компании)'
                             className='application__form-input-3'
                             onChange={onChange}
+                            onFocus={() => onFocusError('site_url')}
                             value={form.site_url}
                         />
                         {errors.site_url && <div className="error__site-url error">{errors.site_url}</div>}
@@ -156,6 +167,7 @@ function Application() {
                     </form>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }
