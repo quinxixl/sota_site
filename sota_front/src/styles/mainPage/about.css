@@ -34,6 +34,7 @@
   transition: all 0.4s ease;
 }
 .about__sota-img {
+  background-color: #14110F;
   transition: transform 0.3s ease;
 }
 .about__sota-background-animate {
@@ -81,7 +82,9 @@
   list-style-type: disc;
 }
 .about__sota:hover .about__sota-img {
+  background-color: none;
   transform: scale(1.35417);
+  z-index: -2;
 }
 .about__sota:hover .about__sota-title {
   transform: translateY(-117px);

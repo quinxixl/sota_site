@@ -48,6 +48,7 @@
     //}
 
     &-img{
+      background-color: #14110F;
       transition: transform 0.3s ease;
     }
 
@@ -106,7 +107,9 @@
     &:hover{
       .about__sota{
           &-img{
+            background-color: none;
             transform: scale(1.35417);
+            z-index: -2;
           }
 
           &-title{

@@ -1,7 +1,13 @@
-import React, {useEffect} from "react";
-import sota from "../../icons/sotaAbout.svg"
+import React, {useEffect, useRef, useState} from "react";
+import sota from "../../icons/sotaAbout.svg";
+import bg from "../../icons/design_background.svg";
+
+
 
 function About () {
+    const imgRef = useRef(null);
+    const [hovered, setHovered] = useState(false);
+
     return (
         <div className='about'>
             <p className="about__title">
@@ -43,8 +49,10 @@ function About () {
                         </div>
 
                 </div>
-                <div className="about__sota design1">
-                    <img src={sota}  className="about__sota-img"/>
+                <div className="about__sota design1"
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}>
+                    <img src={hovered ? bg : sota}  ref = {imgRef} className="about__sota-img"/>
                     <span className="about__sota-title">Design</span>
                     <p className="about__sota-subtitle">визуал и эмоция</p>
                     <div className="about__sota-hover ">
