@@ -39,14 +39,6 @@
     height: 480px;
     transition: all 0.4s ease;
 
-    //&-inner{
-    //  position: absolute;
-    //  width: 650px;
-    //  height: 650px;
-    //  left:0;
-    //  top:0;
-    //}
-
     &-img{
       background-color: #14110F;
       transition: transform 0.3s ease;
@@ -107,8 +99,7 @@
     &:hover{
       .about__sota{
           &-img{
-            background-color: none;
-            transform: scale(1.35417);
+            transform: scale(1.35);
             z-index: -2;
           }
 
@@ -137,7 +128,7 @@
   transform: rotate(8.1deg);
 }
 
-@keyframes shine {
+@keyframes backend {
   from {
     transform: scale(1);
     opacity: 0.5;
@@ -157,7 +148,7 @@
   border-radius: 50%;
   filter: blur(30px);
   z-index: -1;
-  animation: shine 1s cubic-bezier(1,0, 0.0, 1) infinite alternate;
+  animation: backend 1s cubic-bezier(1,0, 0.0, 1) infinite alternate;
 }
 
 .design {
@@ -169,7 +160,7 @@
   border-right-style: hidden;
   border-bottom-style: hidden;
   border-radius: 50%;
-  filter: blur(15px);
+  filter: blur(7px);
   animation: spin 3s cubic-bezier(1,0, 0.0, 1) infinite;
   z-index: -1;
 }
@@ -179,7 +170,7 @@
   25% { transform: rotate(90deg);}
   50% { transform: rotate(180deg);}
   75% { transform: rotate(270deg);}
-  100% { transform: rotate(360deg); }
+  100% { transform: rotate(360deg);}
 }
 
 .about__sota.design1:hover .about__sota-img{
