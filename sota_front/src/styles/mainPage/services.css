@@ -48,7 +48,6 @@
 .services__item-price {
   margin-top: 225px;
   font-size: 40px;
-  transition: transform 1s ease;
   transform: translateY(0);
 }
 .services__item:hover .services__item-price {

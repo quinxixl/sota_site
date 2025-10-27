@@ -30,7 +30,6 @@ function About () {
             <div className="about__container">
                 <div className="about__sota">
                     <img src={sota}  className="about__sota-img"/>
-
                         <p className="about__sota-title">Backend</p>
                         <p className="about__sota-subtitle">глубина и структура</p>
                         <div className="about__sota-hover">
@@ -75,7 +74,7 @@ function About () {
                     <p className="about__sota-title">Frontend</p>
                     <p className="about__sota-subtitle">движение и динамика</p>
                     <div className="about__sota-hover">
-                        <div className="about__sota-background-animate"></div>
+                        <div className="about__sota-background-animate frontend-animate"></div>
                         <ul className="about__sota-hover-list">
                             <li className="about__sota-point">
                                 Жизнь и движение вашего продукта
