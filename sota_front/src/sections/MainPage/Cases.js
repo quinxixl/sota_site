@@ -23,7 +23,7 @@ function CasesPage(){
             </div>
             <button className="cases__cta">
                 <img src={cta} alt="" className="cases__cta-img"/>
-                <span>Больше кейсов</span>
+                <span>Заказать</span>
             </button>
             <p className="cases__about">
                 <a href="#">

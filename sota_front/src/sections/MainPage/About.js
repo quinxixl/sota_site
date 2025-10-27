@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useRef, useState} from "react";
 import sota from "../../icons/sotaAbout.svg";
 import bg from "../../icons/design_background.svg";
 
