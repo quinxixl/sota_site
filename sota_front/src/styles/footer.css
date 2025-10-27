@@ -1,5 +1,4 @@
 .footer {
-  margin-top: 600px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: end;
@@ -9,10 +8,6 @@
   justify-self: left;
   margin-left: 14px;
   margin-bottom: 12.32px;
-}
-.footer__bee:hover #leftWing {
-  transform-origin: top right;
-  transform: translate(2.02px, 3.68px) rotate(-3deg);
 }
 .footer__year {
   justify-self: center;

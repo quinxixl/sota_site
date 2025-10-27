@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import request from "../../scripts/request";
-import cta from "../../icons/cta.svg";
+import cta from "../../icons/services_cta.svg";
 import sotaSvg from "../../icons/sota.svg";
 
 function CasesPage(){
@@ -21,8 +21,8 @@ function CasesPage(){
                     </div>
                 ))}
             </div>
-            <button className="services__cta">
-                <img src={cta} alt="" className="services__cta-img"/>
+            <button className="cases__cta">
+                <img src={cta} alt="" className="cases__cta-img"/>
                 <span>Больше кейсов</span>
             </button>
             <p className="cases__about">
