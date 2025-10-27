@@ -9,6 +9,12 @@
     justify-self: left;
     margin-left: 14px;
     margin-bottom: 12.32px;
+
+    &:hover #leftWing{
+      transform-origin: top right;
+      transform:  translate(2.02px, 3.68px) rotate(-3deg);
+
+    }
   }
 
   &__year{
@@ -54,3 +60,8 @@
   grid-area: pinterest;
   text-align: right;
 }
+
+#leftWing{
+  transition: transform 0.3s;
+}
+

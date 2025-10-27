@@ -134,7 +134,7 @@
   border-right-style: hidden;
   border-bottom-style: hidden;
   border-radius: 50%;
-  filter: blur(15px);
+  filter: blur(7px);
   animation: spin 3s cubic-bezier(1, 0, 0, 1) infinite;
   z-index: -1;
 }
