@@ -30,7 +30,6 @@ function About () {
             <div className="about__container">
                 <div className="about__sota">
                     <img src={sota}  className="about__sota-img"/>
-
                         <p className="about__sota-title">Backend</p>
                         <p className="about__sota-subtitle">глубина и структура</p>
                         <div className="about__sota-hover">
