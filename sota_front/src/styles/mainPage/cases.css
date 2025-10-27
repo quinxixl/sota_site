@@ -21,22 +21,23 @@
   left: 0px;
 }
 .cases__container {
+  overflow: hidden;
   margin-top: 130px;
-  height: 606px;
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(3, 600px);
+  grid-template-columns: repeat(3, 526px);
   grid-template-rows: 606px;
   grid-column-gap: 60px;
   align-items: center;
+  justify-content: center;
 }
 .cases__item {
   position: relative;
-  width: 600px;
   height: 606px;
 }
 .cases__item-sota {
-  z-index: 2;
+  z-index: 10;
+  position: relative;
 }
 .cases__item-logo {
   z-index: 1;
@@ -46,19 +47,32 @@
   transform: translate(-50%, -50%);
 }
 .cases__item-design {
-  width: 526px;
   position: absolute;
-  left: 40px;
+  left: 3px;
   top: 3px;
-  z-index: 0;
   animation: slide-mask 5s linear alternate infinite;
-  -webkit-mask-image: url(../../icons/sota_png.svg);
-  -webkit-mask-repeat: no-repeat;
+  mask-image: url(../../icons/sota_png.svg);
+  mask-repeat: no-repeat;
   opacity: 0.5;
+  overflow: hidden;
+}
+.cases__item-design-imgwrap {
+  overflow: hidden;
+  cursor: grab;
+}
+.cases__item-design-imgwrap img {
+  display: block;
+  user-select: none;
+  transition: transform 0.3s ease;
+  pointer-events: auto;
+}
+.cases__item-design:hover .cases__item-design-imgwrap {
+  overflow: auto;
 }
 .cases__item:hover .cases__item-design {
   opacity: 1;
   transition: opacity 2s ease;
+  pointer-events: auto;
 }
 .cases__item:hover .cases__item-logo {
   opacity: 0;
@@ -72,7 +86,7 @@
     background-position: 0 100%;
   }
 }
-.cases__about {
+.cases__item__about {
   font-family: var(--font-fam);
   font-size: var(--font-min);
   margin-bottom: 30px;
