@@ -1,3 +1,6 @@
+.about {
+  margin-bottom: 8px;
+}
 .about__title {
   text-align: center;
   font-family: var(--font-fam);
@@ -23,15 +26,20 @@
   display: flex;
   align-items: center;
   height: 650px;
-  gap: 140px;
+  gap: 125px;
+  z-index: 0;
+  padding: 0;
+  margin: 0;
 }
 .about__sota {
+  flex: 1;
   position: relative;
   display: flex;
   justify-content: center;
   width: 480px;
   height: 480px;
   transition: all 0.4s ease;
+  z-index: 0;
 }
 .about__sota-img {
   background-color: #14110F;
@@ -84,6 +92,7 @@
 .about__sota:hover .about__sota-img {
   transform: scale(1.35);
   z-index: -2;
+  overflow: hidden;
 }
 .about__sota:hover .about__sota-title {
   transform: translateY(-117px);

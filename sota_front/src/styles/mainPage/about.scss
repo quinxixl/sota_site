@@ -1,4 +1,6 @@
 .about{
+  margin-bottom: 8px;
+
   &__title{
     text-align: center;
     font-family: var(--font-fam);
@@ -28,20 +30,26 @@
     display: flex;
     align-items: center;
     height: 650px;
-    gap: 140px;
+    gap: 125px;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
   }
 
   &__sota{
+    flex: 1;
     position: relative;
     display: flex;
     justify-content: center;
     width: 480px;
     height: 480px;
     transition: all 0.4s ease;
+    z-index: 0;
 
     &-img{
       background-color: #14110F;
       transition: transform 0.3s ease;
+
     }
 
     &-background-animate{
@@ -101,6 +109,7 @@
           &-img{
             transform: scale(1.35);
             z-index: -2;
+            overflow: hidden;
           }
 
           &-title{

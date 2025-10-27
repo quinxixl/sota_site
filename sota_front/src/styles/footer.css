@@ -3,6 +3,7 @@
   grid-template-columns: 1fr auto 1fr;
   align-items: end;
   font-family: var(--font-fam);
+  z-index: 10;
 }
 .footer__bee {
   justify-self: left;
@@ -10,8 +11,6 @@
   margin-bottom: 12.32px;
 }
 .footer__year {
-  justify-self: center;
-  left: 50%;
   font-size: 20px;
 }
 .footer__socials {
