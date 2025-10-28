@@ -1,19 +1,21 @@
 .cases {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .cases__title {
+  text-align: center;
   margin-top: 30px;
   font-size: var(--font-medium);
   font-family: var(--font-fam);
 }
 .cases__cta {
+  align-self: center;
   font-size: 16px;
   margin-top: 113px;
   font-family: var(--font-fam);
   position: relative;
   width: 195px;
   height: 100px;
-  align-items: center;
 }
 .cases__cta-img {
   position: absolute;
@@ -86,12 +88,12 @@
     background-position: 0 100%;
   }
 }
-.cases__item__about {
+.cases__about {
   font-family: var(--font-fam);
   font-size: var(--font-min);
   margin-bottom: 30px;
-  text-align: left;
   position: relative;
+  align-items: start;
 }
 
 /*# sourceMappingURL=cases.css.map */

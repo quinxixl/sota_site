@@ -1,25 +1,26 @@
 .cases {
-  text-align: center;
-
+  display: flex;
+  flex-direction: column;
   &__title {
+    text-align: center;
     margin-top: 30px;
     font-size: var(--font-medium);
     font-family: var(--font-fam);
   }
 
   &__cta {
+    align-self: center;
     font-size: 16px;
     margin-top: 113px;
     font-family: var(--font-fam);
     position: relative;
     width: 195px;
     height: 100px;
-    align-items: center;
 
     &-img {
       position: absolute;
       top: 0px;
-      left: 0px;
+      left: 0px
     }
   }
 
@@ -100,15 +101,13 @@
         background-position: 0 100%;
       }
     }
-
-    &__about {
-      font-family: var(--font-fam);
-      font-size: var(--font-min);
-      margin-bottom: 30px;
-      text-align: left;
-      position: relative;
-    }
-
+  }
+  &__about{
+    font-family: var(--font-fam);
+    font-size: var(--font-min);
+    margin-bottom: 30px;
+    position: relative;
+    align-items: start;
   }
 }
 
