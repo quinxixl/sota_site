@@ -8,7 +8,8 @@
 
   &__nav__list{
     display: flex;
-    gap: clamp(20px, 5vw, 164px);
+    justify-content: space-between;
+    padding-right: clamp(5px, 5vw, 80px);
 
     &-item{
       color: white;
@@ -62,3 +63,64 @@
 }
 
 
+@media (max-width: 1919px) {
+  .header{
+    margin: 30px 66px;
+    &__nav__list{
+      &-item{
+        font-size: 22px;
+      }
+    }
+
+    &__cta{
+      &-title{
+        font-size: 22px;
+      }
+
+      &-img{
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1441px) {
+  .header{
+    margin: 30px 66px;
+    &__nav__list{
+      &-item{
+        font-size: 20px;
+      }
+    }
+
+    &__logo{
+      width: 75%;
+    }
+
+    &__cta{
+      &-title{
+        font-size: 20px;
+      }
+
+      &-img{
+        width: 85%;
+      }
+    }
+  }
+}
+
+
+/* Планшеты (768px - 1023px) */
+@media (max-width: 1023px) {
+
+}
+
+/* Мобильные (480px - 767px) */
+@media (max-width: 767px) {
+
+}
+
+/* Маленькие мобильные (до 479px) */
+@media (max-width: 479px) {
+
+}

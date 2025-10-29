@@ -2,7 +2,7 @@
   text-align: center;
 
   &__title {
-    margin-top: 48px;
+    margin-top: 20px;
     font-size: var(--font-medium);
     font-family: var(--font-fam);
   }
@@ -31,7 +31,7 @@
     position: relative;
     overflow: hidden;
     flex: 1;
-    min-width: 200px;
+    min-width: 100px;
     max-width: 100%;
     transition: flex 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
 
@@ -92,8 +92,7 @@
   &__container:hover .services__item:not(:hover) .services__item-title {
     width: 343px;
     transform: rotate(90deg);
-    position: relative;
-    right: 25px;
+    align-self: center;
   }
     &__container:hover .services__item:not(:hover) .services__item-price {
     font-size: 25px;
@@ -130,4 +129,130 @@
 
 .date{
   top: 90px
+}
+
+
+@media (max-width: 1919px) {
+  .services {
+    &__subtitle{
+      font-size: 27px;
+    }
+  }
+}
+
+
+@media (max-width: 1797px) {
+  .services {
+    &__subtitle{
+      font-size: 24px;
+    }
+
+    &__item{
+      &-price{
+        font-size: 34px;
+      }
+
+      &-title{
+        font-size: 32px;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 1618px) {
+  .services {
+    &__subtitle{
+      font-size: 21px;
+    }
+
+    &__container:hover .services__item:not(:hover) .services__item-price {
+      font-size: 23px;
+    }
+
+    &__item{
+      &-price{
+        font-size: 30px;
+      }
+
+      &-title{
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1441px) {
+  .services {
+    &__subtitle{
+      font-size: 19px;
+    }
+
+    &__container:hover .services__item:not(:hover) .services__item-price {
+      font-size: 23px;
+    }
+
+    &__item{
+      &-price{
+        font-size: 26px;
+      }
+
+      &-title{
+        font-size: 24px;
+      }
+
+      &-subtitle {
+        font-size: 28px;
+      }
+
+      &-date{
+        font-size: 34px;
+      }
+    }
+
+    &__cta{
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-height: 901px) {
+    .services {
+      &__item{
+        height: 520px;
+
+        &-title{
+          margin-top: 200px;
+        }
+
+        &:hover &-title {
+          margin-top: 30px;
+        }
+
+        &-subtitle {
+          transform: translateY(-30px);
+        }
+
+        &-date{
+          transform: translateY(-70px);
+        }
+
+        &:hover &-price {
+          transform: translateY(160px);
+        }
+      }
+    }
+}
+
+
+@media (max-width: 1023px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 479px) {
+
 }

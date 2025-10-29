@@ -6,8 +6,7 @@
     gap: 50px;
 
     &-main{
-      margin: 0 96px;
-      margin-top: 216px;
+      margin: 200px 96px;
       display: grid;
       padding: 0;
       height: 65vh;
@@ -91,8 +90,10 @@
     font-size: var(--font-min);
 
     &-copyright{
-      margin-left: 9%;
-      position: relative;
+
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       background: linear-gradient(
                       90deg,
                       #FFFFFF 0%,
@@ -143,3 +144,52 @@
   }
 }
 
+
+@media (max-width: 1919px) {
+  .hero{
+    &__container{
+      &-main{
+        margin: 170px 66px;
+      }
+    }
+
+    &__subtitle{
+      font-size: 28px;
+    }
+
+    &__footer{
+      &-links{
+        gap: 90px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1441px) {
+  .hero{
+    &__container{
+      &-main{
+        margin: 160px 66px;
+      }
+    }
+
+    &__footer{
+      &-links{
+        gap: 40px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1023px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 479px) {
+
+}
