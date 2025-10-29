@@ -91,9 +91,8 @@
     font-size: var(--font-min);
 
     &-copyright{
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+      margin-left: 9%;
+      position: relative;
       background: linear-gradient(
                       90deg,
                       #FFFFFF 0%,

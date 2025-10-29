@@ -2,7 +2,7 @@
   text-align: center;
 }
 .services__title {
-  margin-top: 48px;
+  margin-top: 20px;
   font-size: var(--font-medium);
   font-family: var(--font-fam);
 }
@@ -28,7 +28,7 @@
   position: relative;
   overflow: hidden;
   flex: 1;
-  min-width: 200px;
+  min-width: 100px;
   max-width: 100%;
   transition: flex 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
 }
@@ -81,8 +81,7 @@
 .services__container:hover .services__item:not(:hover) .services__item-title {
   width: 343px;
   transform: rotate(90deg);
-  position: relative;
-  right: 25px;
+  align-self: center;
 }
 .services__container:hover .services__item:not(:hover) .services__item-price {
   font-size: 25px;
@@ -114,6 +113,80 @@
 
 .date {
   top: 90px;
+}
+
+@media (max-width: 1919px) {
+  .services__subtitle {
+    font-size: 27px;
+  }
+}
+@media (max-width: 1797px) {
+  .services__subtitle {
+    font-size: 24px;
+  }
+  .services__item-price {
+    font-size: 34px;
+  }
+  .services__item-title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1618px) {
+  .services__subtitle {
+    font-size: 21px;
+  }
+  .services__container:hover .services__item:not(:hover) .services__item-price {
+    font-size: 23px;
+  }
+  .services__item-price {
+    font-size: 30px;
+  }
+  .services__item-title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1441px) {
+  .services__subtitle {
+    font-size: 19px;
+  }
+  .services__container:hover .services__item:not(:hover) .services__item-price {
+    font-size: 23px;
+  }
+  .services__item-price {
+    font-size: 26px;
+  }
+  .services__item-title {
+    font-size: 24px;
+  }
+  .services__item-subtitle {
+    font-size: 28px;
+  }
+  .services__item-date {
+    font-size: 34px;
+  }
+  .services__cta {
+    margin-top: 30px;
+  }
+}
+@media (max-height: 901px) {
+  .services__item {
+    height: 520px;
+  }
+  .services__item-title {
+    margin-top: 200px;
+  }
+  .services__item:hover .services__item-title {
+    margin-top: 30px;
+  }
+  .services__item-subtitle {
+    transform: translateY(-30px);
+  }
+  .services__item-date {
+    transform: translateY(-70px);
+  }
+  .services__item:hover .services__item-price {
+    transform: translateY(160px);
+  }
 }
 
 /*# sourceMappingURL=services.css.map */

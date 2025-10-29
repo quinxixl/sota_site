@@ -10,7 +10,7 @@ function Hero() {
                 <Sota
                     hexSize={25}
                     borderColor="#333"
-                    hoverFillColor="#FF7514"
+                    hoverColor="#FF7514"
                     gapX={5}
                     gapY={18.5}
                 />

@@ -31,4 +31,10 @@
     margin: 0 96px !important;
 }
 
+@media (max-width: 1919px) {
+    .services, .cases {
+        margin: 0 66px !important;
+    }
+}
+
 
