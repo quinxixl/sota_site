@@ -3,7 +3,6 @@ import sota from "../../icons/sotaAbout.svg";
 import bg from "../../icons/design_background.svg";
 
 
-
 function About () {
     const imgRef = useRef(null);
     const [hovered, setHovered] = useState(false);

@@ -5,9 +5,9 @@
   gap: 50px;
 }
 .hero__container-main {
+  margin: 0 96px;
+  margin-top: 216px;
   display: grid;
-  margin-top: 219px;
-  margin-bottom: 35px;
   padding: 0;
   height: 65vh;
 }

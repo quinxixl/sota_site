@@ -167,6 +167,7 @@ function Application() {
                     </form>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

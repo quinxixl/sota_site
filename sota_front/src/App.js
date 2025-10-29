@@ -13,7 +13,6 @@ function App() {
                     <Route path="/" element={<MainPage />} />
                     <Route path="/application" element={<Application />} />
                 </Routes>
-                <Footer />
             </div>
         </Router>
     );
