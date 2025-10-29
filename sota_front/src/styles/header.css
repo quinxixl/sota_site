@@ -2,12 +2,12 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
+  justify-content: space-between;
   font-family: var(--font-fam);
 }
 .header__nav__list {
-  justify-self: left;
   display: flex;
-  gap: 164px;
+  gap: clamp(20px, 5vw, 164px);
 }
 .header__nav__list-item {
   color: white;

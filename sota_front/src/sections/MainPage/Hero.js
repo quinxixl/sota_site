@@ -7,7 +7,13 @@ function Hero() {
     return (
         <div className="hero">
             <div className="hero__container-side">
-
+                <Sota
+                    hexSize={25}
+                    borderColor="#333"
+                    hoverColor="#FF7514"
+                    gapX={5}
+                    gapY={18.5}
+                />
                 <Header />
             </div>
             <div className="hero__container-main">

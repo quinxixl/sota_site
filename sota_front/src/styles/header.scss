@@ -2,12 +2,13 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
+  justify-content: space-between;
   font-family: var(--font-fam);
 
   &__nav__list{
-    justify-self: left;
     display: flex;
-    gap: 164px;
+    gap: clamp(20px, 5vw, 164px);
+
     &-item{
       color: white;
       font-size: 24px;
@@ -56,22 +57,7 @@
       font-size: 24px;
       color: #000;
     }
-
-    //& span:first-child{
-    //  position: absolute;
-    //  bottom: 100%;
-    //  left: 0;
-    //  border: 121px solid transparent;
-    //  border-bottom: 20px solid white;
-    //  cursor: default;
-    //}
-    //& span:last-child{
-    //  position: absolute;
-    //  left: 0;
-    //  top: 100%;
-    //  border: 121px solid transparent;
-    //  border-top: 20px solid white;
-    //  cursor: default;
-    //}
   }
 }
+
+
