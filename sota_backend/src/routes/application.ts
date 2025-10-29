@@ -11,18 +11,18 @@ router.post("/", async (req, res) => {
         const applicationData = req.body;
 
         const message = `
-        Новая заявка!
-        
-        Описание задачи:
-        ${applicationData.task_description}
-        
-        Контактные данные клиента:
-        - ФИО: ${applicationData.fullname}
-        - Название компании: ${applicationData.company_name}
-        - Email: ${applicationData.email}
-        - Номер телефона: ${applicationData.phone_number}
-        - URL: ${applicationData.site_url}
-        `
+Новая заявка!
+
+Описание задачи:
+${applicationData.task_description}
+
+Контактные данные клиента:
+- ФИО: ${applicationData.fullname}
+- Название компании: ${applicationData.company_name}
+- Email: ${applicationData.email}
+- Номер телефона: ${applicationData.phone_number}
+- URL: ${applicationData.site_url}
+`
 
         try {
             await Promise.all(
