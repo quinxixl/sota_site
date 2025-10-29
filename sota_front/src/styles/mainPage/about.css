@@ -47,7 +47,7 @@
   transition: transform 0.3s ease;
 }
 .about__sota-background-animate {
-  width: 650px;
+  width: 561.6px;
   height: 650px;
   position: absolute;
   display: flex;
@@ -124,7 +124,6 @@
   }
 }
 .backend {
-  position: absolute;
   width: 87px;
   height: 87px;
   background: #D9D9D9;

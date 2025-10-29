@@ -28,8 +28,7 @@
   display: grid;
   grid-template-columns: repeat(3, 526px);
   grid-template-rows: 606px;
-  grid-column-gap: 60px;
-  justify-content: center;
+  justify-content: space-between;
 }
 .cases__item {
   position: relative;

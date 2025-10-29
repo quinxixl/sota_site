@@ -30,8 +30,7 @@
     display: grid;
     grid-template-columns: repeat(3, 526px);
     grid-template-rows: (606px);
-    grid-column-gap: 60px;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   &__item {
@@ -68,9 +67,6 @@
       align-items: center;
       opacity: 0.5;
       overflow: hidden;
-
-
-
 
       &-imgwrap {
         width: 100%;
@@ -125,5 +121,7 @@
   z-index: 2;
   pointer-events: none;
 }
+
+
 
 
