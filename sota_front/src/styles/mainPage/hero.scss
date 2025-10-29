@@ -143,3 +143,52 @@
   }
 }
 
+@media (max-width: 1919px) {
+  .hero{
+    &__container{
+      &-main{
+        margin: 170px 66px;
+      }
+    }
+
+    &__subtitle{
+      font-size: 28px;
+    }
+
+    &__footer{
+      &-links{
+        gap: 90px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1441px) {
+  .hero{
+    &__container{
+      &-main{
+        margin: 160px 66px;
+      }
+    }
+
+    &__footer{
+      &-links{
+        gap: 40px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1023px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 479px) {
+
+}
+

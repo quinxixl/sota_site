@@ -5,7 +5,8 @@
   gap: 50px;
 }
 .hero__container-main {
-  margin: 200px 96px;
+  margin: 0 96px;
+  margin-top: 216px;
   display: grid;
   padding: 0;
   height: 65vh;
@@ -66,9 +67,8 @@
   font-size: var(--font-min);
 }
 .hero__footer-copyright {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-left: 9%;
+  position: relative;
   background: linear-gradient(90deg, #FFFFFF 0%, #FFA96A 25%, #FFFFFF 50%, #FFA96A 75%, #FFFFFF 100%);
   background-size: 200% auto;
   background-clip: text;
