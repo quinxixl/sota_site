@@ -30,6 +30,7 @@ function CasesPage(){
             <div className="cases__container">
                 {requests.map((item, index) => (
                     <div key={index} className="cases__item" onMouseEnter={noScroll} onMouseLeave={scroll}>
+                        <img src = {sotaSvg} className="border"/>
                         <div className="cases__item-design">
                             <div className='cases__item-design-imgwrap'>
                                 <img src={`${item.design_url}`} alt=""/>
