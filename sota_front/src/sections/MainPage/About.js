@@ -1,6 +1,7 @@
 import React, {useRef, useState} from "react";
 import sota from "../../icons/sotaAbout.svg";
 import bg from "../../icons/design_background.svg";
+import Footer from "../../components/UI/Footer";
 
 
 function About () {
@@ -88,6 +89,7 @@ function About () {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
