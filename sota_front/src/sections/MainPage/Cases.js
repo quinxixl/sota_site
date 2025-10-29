@@ -3,6 +3,7 @@ import request from "../../scripts/request";
 import cta from "../../icons/services_cta.svg";
 import sotaSvg from "../../icons/sota.svg";
 
+
 function CasesPage(){
     const imageRef = useRef(null);
     const [requests, setRequests] = useState([]);
@@ -29,7 +30,7 @@ function CasesPage(){
             <div className="cases__container">
                 {requests.map((item, index) => (
                     <div key={index} className="cases__item" onMouseEnter={noScroll} onMouseLeave={scroll}>
-                        <img src={sotaSvg} alt="" className="cases__item-sota"/>
+                        <img src = {sotaSvg} className="border"/>
                         <div className="cases__item-design">
                             <div className='cases__item-design-imgwrap'>
                                 <img src={`${item.design_url}`} alt=""/>
