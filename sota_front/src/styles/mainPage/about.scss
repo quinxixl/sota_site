@@ -68,7 +68,7 @@
       font-family: var(--font-fam);
       font-size: var(--font-big);
       transition: transform 0.3s ease;
-
+      z-index: 1;
     }
 
     &-subtitle{
@@ -77,6 +77,7 @@
       font-family: var(--font-fam2);
       font-size: var(--font-min);
       transition: transform 0.3s ease;
+      z-index: 1;
     }
 
     &-hover{
@@ -84,14 +85,14 @@
       display: grid;
       place-items: center;
       pointer-events: none;
-
-      width: 650px;
-      height: 650px;
-      left: -85px;
-      top: -85px;
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
       visibility: hidden;
       opacity: 0;
       transition: opacity 0.5s ease, visibility 0.5s ease;
+      z-index: 0;
 
       &-list{
         font-size: 20px;
@@ -201,4 +202,98 @@
   60% {transform: translateY(150px) translateX(-110px); background-color: #FDE910;}
   80% {transform: translateY(150px) translateX(110px); background-color: #FFB300;}
   100% {transform: translateY(-140px) translateX(-110px); background: #D9D9D9;}
+}
+
+@media (max-width: 1919px) {
+  .about {
+    &__sota {
+      &-title {
+        font-size: 48px;
+      }
+    }
+
+    &__title {
+      font-size: 42px;
+    }
+
+    &__subtitle {
+      font-size: 40px;
+    }
+
+    &__subtitle-main {
+      font-size: 30px;
+    }
+  }
+
+  .backend {
+    width: 50px;
+    height: 50px;
+    filter: blur(22px);
+  }
+
+  .design{
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 1441px){
+  .about{
+    &__sota {
+      &-title {
+        font-size: 32px;
+      }
+
+      &-subtitle{
+        font-size: 16px;
+      }
+
+      &-point{
+        font-size: 12px;
+      }
+
+      &:hover{
+        .about__sota{
+          &-title{
+            transform: translateY(-50px);
+          }
+
+          &-subtitle{
+            transform: translateY(-80px);
+          }
+        }
+      }
+    }
+
+    &__title{
+      font-size: 36px;
+    }
+
+    &__subtitle{
+      font-size: 27px;
+    }
+
+    &__subtitle-main{
+      font-size: 20px;
+    }
+
+
+  }
+
+  .backend {
+    width: 35px;
+    height: 35px;
+    filter: blur(19px);
+  }
+
+  .design{
+    width: 120px;
+    height: 120px;
+  }
+
+  .frontend-animate{
+    width: 70px;
+    height: 70px;
+  }
+
 }

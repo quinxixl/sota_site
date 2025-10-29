@@ -67,8 +67,9 @@
   font-size: var(--font-min);
 }
 .hero__footer-copyright {
-  margin-left: 9%;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   background: linear-gradient(90deg, #FFFFFF 0%, #FFA96A 25%, #FFFFFF 50%, #FFA96A 75%, #FFFFFF 100%);
   background-size: 200% auto;
   background-clip: text;

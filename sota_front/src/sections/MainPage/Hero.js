@@ -38,7 +38,7 @@ function Hero() {
                     </a>
                     <span className="hero__footer-copyright">
                     ©2025
-                </span>
+                    </span>
                     <div className="hero__footer-links">
                         <ul className="hero__footer-links-1">
                             <a href="#" className="hero__footer-link">

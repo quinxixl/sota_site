@@ -14,7 +14,7 @@
   margin-top: 113px;
   font-family: var(--font-fam);
   position: relative;
-  width: 195px;
+  width: 193px;
   height: 100px;
 }
 .cases__cta-img {
@@ -23,11 +23,10 @@
   left: 0px;
 }
 .cases__container {
-  overflow: hidden;
+  position: relative;
   margin-top: 130px;
   display: grid;
   grid-template-columns: repeat(3, 526px);
-  grid-template-rows: 606px;
   justify-content: space-between;
 }
 .cases__item {
@@ -55,7 +54,7 @@
   animation: slide-mask 5s linear alternate infinite;
   mask-image: url(../../icons/sota_png.svg);
   mask-repeat: no-repeat;
-  mask-size: 100%, 100%;
+  mask-size: 523px, 606px;
   mask-position: center;
   display: flex;
   justify-content: center;
@@ -86,18 +85,9 @@
   opacity: 0;
   transition: opacity 1s ease;
 }
-@keyframes slide-mask {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 100%;
-  }
-}
 .cases__about {
   font-family: var(--font-fam);
   font-size: var(--font-min);
-  margin-bottom: 30px;
   position: relative;
   align-items: start;
 }
@@ -106,6 +96,15 @@
   position: absolute;
   z-index: 2;
   pointer-events: none;
+}
+
+@media (max-width: 1919px) {
+  .cases__title {
+    font-size: 42px;
+  }
+  .cases__about {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=cases.css.map */

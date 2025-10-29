@@ -14,22 +14,21 @@
     margin-top: 113px;
     font-family: var(--font-fam);
     position: relative;
-    width: 195px;
+    width: 193px;
     height: 100px;
 
     &-img {
       position: absolute;
       top: 0px;
-      left: 0px
+      left: 0px;
     }
   }
 
   &__container {
-    overflow: hidden;
+    position: relative;
     margin-top: 130px;
     display: grid;
     grid-template-columns: repeat(3, 526px);
-    grid-template-rows: (606px);
     justify-content: space-between;
   }
 
@@ -60,7 +59,7 @@
       animation: slide-mask 5s linear alternate infinite;
       mask-image: url(../../icons/sota_png.svg);
       mask-repeat: no-repeat;
-      mask-size: 100%, 100%;
+      mask-size: 523px, 606px;
       mask-position: center;
       display: flex;
       justify-content: center;
@@ -98,19 +97,10 @@
       transition: opacity 1s ease;
     }
 
-    @keyframes slide-mask {
-      0% {
-        background-position: 0 0;
-      }
-      100% {
-        background-position: 0 100%;
-      }
-    }
   }
   &__about{
     font-family: var(--font-fam);
     font-size: var(--font-min);
-    margin-bottom: 30px;
     position: relative;
     align-items: start;
   }
@@ -122,6 +112,29 @@
   pointer-events: none;
 }
 
+@media (max-width: 1919px) {
+  .cases{
+    &__title{
+      font-size: 42px;
+    }
+
+    &__about{
+      font-size: 18px;
+    }
+
+
+
+    //&__container{
+    //  grid-template-columns: repeat(2, 526px);
+    //  grid-template-rows: repeat(2, 606px);
+    //  justify-content: center;
+    //  grid-column-gap: 100px;
+    //  grid-row-gap: 50px;
+    //}
+
+  }
+
+}
 
 
 
