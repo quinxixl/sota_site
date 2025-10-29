@@ -50,6 +50,7 @@
   align-items: center;
   position: relative;
   width: 240px;
+  height: 74px;
   grid-area: button-file;
   margin-top: 24px;
 }
@@ -68,7 +69,6 @@
   font-family: var(--font-fam);
 }
 .application__form-question {
-  width: 998px;
   height: 40px;
   grid-area: question;
   font-family: var(--font-fam);
@@ -86,7 +86,6 @@
   grid-area: question-2;
 }
 .application__form-container {
-  margin-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;

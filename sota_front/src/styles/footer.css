@@ -1,4 +1,5 @@
 .footer {
+  width: 1728px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: end;
