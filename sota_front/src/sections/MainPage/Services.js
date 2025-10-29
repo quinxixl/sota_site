@@ -1,7 +1,12 @@
 import React from "react";
 import cta from "../../icons/services_cta.svg";
+import { useNavigate } from 'react-router-dom';
+import handleClick from "../../scripts/handleClick"
 
 function Services() {
+    const navigate = useNavigate();
+
+    handleClick(navigate);
     return (
         <div className='services'>
             <p className="services__title">
@@ -108,7 +113,7 @@ function Services() {
                     </div>
                 </div>
             </div>
-            <button className="services__cta">
+            <button className="services__cta" onClick={() => handleClick(navigate)}>
                 <img src={cta} alt="" className="services__cta-img"/>
                 <span className='services__cta-img-title'>Заказать</span>
             </button>

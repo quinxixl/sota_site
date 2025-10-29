@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Header from "../components/UI/Header";
 import ctaWhite from "../icons/ctaWhite.svg";
 import ctaWhiteButton from "../icons/ctaWhiteButton.svg";
-import Footer from "../components/UI/Footer";
 
 function Application() {
     const [form, setForm] = useState({
@@ -167,7 +166,6 @@ function Application() {
                     </form>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }
