@@ -3,6 +3,7 @@
   grid-template-columns: 1fr auto 1fr;
   align-items: end;
   font-family: var(--font-fam);
+  z-index: 10;
 
   &__bee{
     justify-self: left;
@@ -11,8 +12,6 @@
   }
 
   &__year{
-    justify-self: center;
-    left: 50%;
     font-size: 20px;
   }
 

@@ -1,5 +1,8 @@
 .about{
+  margin-bottom: 8px;
+
   &__title{
+    margin-top: 30px;
     text-align: center;
     font-family: var(--font-fam);
     font-size: var(--font-medium);
@@ -28,20 +31,26 @@
     display: flex;
     align-items: center;
     height: 650px;
-    gap: 140px;
+    gap: 95px;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
   }
 
   &__sota{
+    flex: 1;
     position: relative;
     display: flex;
     justify-content: center;
     width: 480px;
     height: 480px;
     transition: all 0.4s ease;
+    z-index: 0;
 
     &-img{
       background-color: #14110F;
       transition: transform 0.3s ease;
+
     }
 
     &-background-animate{
@@ -101,6 +110,7 @@
           &-img{
             transform: scale(1.35);
             z-index: -2;
+            overflow: hidden;
           }
 
           &-title{
@@ -161,7 +171,7 @@
   border-bottom-style: hidden;
   border-radius: 50%;
   filter: blur(7px);
-  animation: spin 3s cubic-bezier(1,0, 0.0, 1) infinite;
+  animation: spin 3s infinite;
   z-index: -1;
 }
 
@@ -171,10 +181,6 @@
   50% { transform: rotate(180deg);}
   75% { transform: rotate(270deg);}
   100% { transform: rotate(360deg);}
-}
-
-.about__sota.design1:hover .about__sota-img{
-  fill: red;
 }
 
 
