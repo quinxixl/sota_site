@@ -1,3 +1,6 @@
+.application__main {
+  margin: 30px 96px;
+}
 .application__privacy {
   display: flex;
   justify-content: center;

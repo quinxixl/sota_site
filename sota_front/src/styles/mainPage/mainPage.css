@@ -2,3 +2,33 @@
 @import 'services.css';
 @import 'cases.css';
 @import 'about.css';
+
+.hero, .services, .cases, .about {
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    position: relative;
+    overflow: hidden;  /* Чтобы ничего не вылезало */
+    overflow-x: visible;
+    scroll-snap-align: start;  /* Или center, если хотите центрировать секцию в viewport */
+    scroll-snap-stop: always;  /* Добавьте это — предотвращает пропуск секций при быстром скролле */
+}
+
+.mainPage {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    will-change: scroll-position;
+}
+
+.services, .cases {
+    height: 100vh !important;
+    margin: 0 96px !important;
+}
+
+
