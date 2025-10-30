@@ -1,0 +1,34 @@
+.slider {
+  position: relative;
+  margin-top: 130px;
+}
+.slider__button {
+  position: relative;
+  top: 600px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+.slider .prev {
+  margin-left: -30px;
+  height: 41px;
+}
+.slider .next {
+  right: -40px;
+  height: 41px;
+}
+.slider__container {
+  width: 100%;
+}
+.slider__container-item {
+  display: flex;
+  align-items: center;
+}
+
+.right-arrow {
+  rotate: 180deg;
+}
+
+/*# sourceMappingURL=slider.css.map */
