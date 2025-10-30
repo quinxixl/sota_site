@@ -7,6 +7,7 @@ import {Navigation, Pagination, Autoplay} from "swiper/modules";
 import sotaSvg from "../icons/sota.svg";
 import request from "../scripts/request";
 
+
 function Slider({prevRef, nextRef}) {
     const [requests, setRequests] = useState([]);
 
@@ -26,6 +27,7 @@ function Slider({prevRef, nextRef}) {
     }
 
         return (
+            <div className='slider'>
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={0}
@@ -51,6 +53,7 @@ function Slider({prevRef, nextRef}) {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            </div>
         )
 }
 

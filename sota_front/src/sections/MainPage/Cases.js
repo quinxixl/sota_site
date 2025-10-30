@@ -28,7 +28,7 @@ function CasesPage(){
     }
 
     return (
-        <div>
+        <div className="">
             <div className='slider__button'>
                 <button ref={prevRef} className="prev"><img src={arrow} className='left-arrow'/></button>
                 <button ref={nextRef} className="next"><img src={arrow} className='right-arrow'/></button>
