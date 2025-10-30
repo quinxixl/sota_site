@@ -1,13 +1,15 @@
 .footer {
   scroll-snap-align: start;
+  position: relative;
+  bottom: 30px;
   margin: 0 96px;
-  margin-bottom: 30px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: end;
   font-family: var(--font-fam);
   z-index: 10;
-  position: relative;
+  height: 96px;
+  width: 1728px;
 }
 .footer__bee {
   justify-self: left;
