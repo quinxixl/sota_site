@@ -1,4 +1,5 @@
 .cases {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -21,6 +22,11 @@
   position: absolute;
   top: 0px;
   left: 0px;
+}
+.cases__slider {
+  position: relative;
+  height: 606px;
+  margin-top: 130px;
 }
 .cases__container {
   position: relative;
@@ -90,7 +96,8 @@
 .cases__about {
   font-family: var(--font-fam);
   font-size: var(--font-min);
-  position: relative;
+  position: absolute;
+  bottom: 30px;
   align-items: start;
 }
 
@@ -106,6 +113,11 @@
   }
   .cases__about {
     font-size: 18px;
+  }
+  .cases__about:hover {
+    color: #ff984d;
+    transform: translateY(-2px);
+    text-shadow: 0 0 8px rgb(255, 169, 106);
   }
 }
 

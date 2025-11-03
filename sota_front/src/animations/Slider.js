@@ -6,11 +6,10 @@ import "swiper/css/pagination";
 import {Navigation, Pagination, Autoplay} from "swiper/modules";
 import sotaSvg from "../icons/sota.svg";
 import request from "../scripts/request";
-
+import arrow from "../icons/arrow.svg";
 
 function Slider({prevRef, nextRef}) {
     const [requests, setRequests] = useState([]);
-
 
     useEffect(() => {
         const url = 'http://localhost:3000/api/cases/';
@@ -23,7 +22,6 @@ function Slider({prevRef, nextRef}) {
 
     const scroll = () => {
         document.body.style.overflow = 'auto';
-
     }
 
         return (

@@ -1,7 +1,6 @@
 import React, {useRef, useState} from "react";
 import sota from "../../icons/sotaAbout.svg";
 import bg from "../../icons/design_background.svg";
-import Footer from "../../components/UI/Footer";
 
 
 function About () {
@@ -17,16 +16,16 @@ function About () {
                 <p className="about__subtitle">
                     Ваш бизнес — это улей.
                 </p>
-                <p className="about__subtitle">
+                <p className="about__subtitle-2">
                     Мы — его защита и опора.
                 </p>
+                <p className="about__subtitle-main">
+                    Мы действуем <br/>
+                    как сплоченный рой, <br/>
+                    где каждый специалист <br/>
+                    точно знает свою задачу. <br/>
+                </p>
             </div>
-            <p className="about__subtitle-main">
-                Мы действуем <br/>
-                как сплоченный рой, <br/>
-                где каждый специалист <br/>
-                точно знает свою задачу. <br/>
-            </p>
             <div className="about__container">
                 <div className="about__sota">
                     <img src={sota}  className="about__sota-img"/>
@@ -46,7 +45,6 @@ function About () {
                                 </li>
                             </ul>
                         </div>
-
                 </div>
                 <div className="about__sota design1"
                 onMouseEnter={() => setHovered(true)}

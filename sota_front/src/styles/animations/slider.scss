@@ -1,39 +1,37 @@
 .slider{
   position: relative;
-  margin-top: 130px;
+  height: 606px;
+  overflow: hidden;
+
   &__button{
-    position: relative;
-    top: 600px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 40px;
+    position: absolute;
+
+    top: 50%;
+    left:0;
+    height: 41px;
     transform: translateY(-50%);
+    font-size: 40px;
     z-index:999;
-  }
-
-  .prev{
-    margin-left: -30px;
-    height: 41px;
-  }
-
-  .next{
-    right:-40px;
-    height: 41px;
-  }
-
-  &__container{
     width: 100%;
+
+    .prev{
+      position: absolute;
+      left: -30px;
+      height: 41px;
+    }
+
+    .next{
+      position: absolute;
+      right: -30px;
+      height: 41px;
+      transform: rotate(180deg);
+    }
+
+  }
 
     &-item{
       display: flex;
-      align-items: center;
 
-    }
   }
 }
-
-.right-arrow{
-  rotate: 180deg;
-}
-
 

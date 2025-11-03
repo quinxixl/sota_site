@@ -2,28 +2,39 @@
   position: relative;
   min-height: 100vh;
   padding-bottom: 80px;
+  z-index: 10;
+  margin: 0 96px;
 }
 .about__title {
-  margin-top: 30px;
+  margin-top: 22px;
   text-align: center;
   font-family: var(--font-fam);
   font-size: var(--font-medium);
 }
 .about__container-subtitle {
-  display: flex;
+  display: grid;
   justify-content: space-between;
-  margin-top: 48px;
+  margin-top: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "subtitle subtitle-2" "subtitle-main subtitle-main";
 }
 .about__subtitle {
-  margin: 0 96px;
   font-family: var(--font-fam2);
   font-size: var(--font-medium);
+  grid-area: subtitle;
+}
+.about__subtitle-2 {
+  font-family: var(--font-fam2);
+  font-size: var(--font-medium);
+  text-align: end;
+  grid-area: subtitle-2;
 }
 .about__subtitle-main {
   text-align: center;
   font-family: var(--font-fam2);
   font-size: 40px;
   margin-top: 22px;
+  grid-area: subtitle-main;
 }
 .about__container {
   position: relative;
@@ -31,9 +42,8 @@
   align-items: center;
   height: 650px;
   gap: 95px;
-  z-index: 0;
+  z-index: 1;
   padding: 0;
-  margin: 0 96px;
 }
 .about__sota {
   flex: 1;
@@ -82,7 +92,6 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s ease, visibility 0.5s ease;
   z-index: 0;
@@ -99,7 +108,6 @@
 .about__sota:hover .about__sota-img {
   transform: scale(1.35);
   z-index: -2;
-  overflow: hidden;
 }
 .about__sota:hover .about__sota-title {
   transform: translateY(-117px);
@@ -266,6 +274,32 @@
   .frontend-animate {
     width: 70px;
     height: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .about__title {
+    font-size: 36px;
+  }
+  .about__container-subtitle {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    width: 398px;
+    justify-content: center;
+    grid-template-areas: "subtitle" "subtitle-2" "subtitle-main";
+    grid-row-gap: 30px;
+  }
+  .about__subtitle {
+    width: 398px;
+    font-size: 24px;
+  }
+  .about__subtitle-main {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .about__subtitle-2 {
+    font-size: 24px;
   }
 }
 

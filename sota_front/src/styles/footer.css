@@ -1,28 +1,32 @@
 .footer {
   scroll-snap-align: start;
   position: relative;
-  bottom: 30px;
-  margin: 0 96px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 96px;
+  margin-right: 96px;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
   align-items: end;
   font-family: var(--font-fam);
-  z-index: 10;
+  grid-template-columns: 1fr auto 1fr;
+  z-index: -1;
   height: 96px;
+  grid-template-areas: "logo year socials";
 }
 .footer__bee {
   justify-self: left;
-  margin-left: 14px;
-  margin-bottom: 12.32px;
+  grid-area: logo;
 }
 .footer__year {
   font-size: 20px;
+  grid-area: year;
 }
 .footer__socials {
   justify-self: right;
   display: grid;
   grid-template-areas: "inst behance" "youtube telegram" "vk pinterest";
   grid-column-gap: 83px;
+  grid-area: socials;
 }
 
 .inst {
@@ -54,6 +58,31 @@
 
 #leftWing {
   transition: transform 0.3s;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    height: 123px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "socials socials" "logo year";
+  }
+  .footer__bee {
+    width: 50.85px;
+    height: 53px;
+  }
+  .footer__year {
+    font-size: 16px;
+    text-align: end;
+  }
+  .footer__socials {
+    grid-row-gap: 10px;
+    grid-template-columns: 75px 75px;
+    grid-column-gap: 0;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

@@ -28,26 +28,25 @@ function CasesPage(){
     }
 
     return (
-        <div className="">
-            <div className='slider__button'>
-                <button ref={prevRef} className="prev"><img src={arrow} className='left-arrow'/></button>
-                <button ref={nextRef} className="next"><img src={arrow} className='right-arrow'/></button>
-            </div>
             <div className="cases">
                 <p className="cases__title">Кейсы</p>
-
-                <Slider prevRef = {prevRef} nextRef = {nextRef}/>
+                <div className="cases__slider">
+                    <div className='slider__button'>
+                        <button ref={prevRef} className="prev"><img src={arrow} className='left-arrow'/></button>
+                        <button ref={nextRef} className="next"><img src={arrow} className='right-arrow'/></button>
+                    </div>
+                    <Slider prevRef = {prevRef} nextRef = {nextRef}/>
+                </div>
                 <button className="cases__cta">
                     <img src={cta} alt="" className="cases__cta-img"/>
                     <span>Заказать</span>
                 </button>
-                <p className="cases__about">
+                <p className="cases__about ">
                     <a href="#">
                         О команде
                     </a>
                 </p>
             </div>
-        </div>
     )
 }
 

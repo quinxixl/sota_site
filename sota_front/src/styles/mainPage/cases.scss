@@ -1,6 +1,8 @@
 .cases {
+  position: relative;
   display: flex;
   flex-direction: column;
+
   &__title {
     text-align: center;
     margin-top: 30px;
@@ -22,6 +24,12 @@
       top: 0px;
       left: 0px;
     }
+  }
+
+  &__slider{
+    position: relative;
+    height: 606px;
+    margin-top: 130px;
   }
 
   &__container {
@@ -103,7 +111,8 @@
   &__about{
     font-family: var(--font-fam);
     font-size: var(--font-min);
-    position: relative;
+    position: absolute;
+    bottom: 30px;
     align-items: start;
   }
 }
@@ -122,21 +131,14 @@
 
     &__about{
       font-size: 18px;
+      &:hover{
+        color: #ff984d;
+        transform: translateY(-2px);
+        text-shadow: 0 0 8px rgb(255, 169, 106);
+      }
     }
-
-
-
-    //&__container{
-    //  grid-template-columns: repeat(2, 526px);
-    //  grid-template-rows: repeat(2, 606px);
-    //  justify-content: center;
-    //  grid-column-gap: 100px;
-    //  grid-row-gap: 50px;
-    //}
-
   }
 
 }
-
 
 

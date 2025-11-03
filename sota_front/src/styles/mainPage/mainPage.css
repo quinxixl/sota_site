@@ -5,12 +5,10 @@
 
 .hero, .services, .cases, .about {
     height: 100vh !important;
-    margin: 0 !important;
+    margin: 30px 96px 0px 96px !important;
     padding: 0 !important;
     box-sizing: border-box !important;
     position: relative;
-    overflow: hidden;  /* Чтобы ничего не вылезало */
-    overflow-x: visible;
     scroll-snap-align: start;  /* Или center, если хотите центрировать секцию в viewport */
     scroll-snap-stop: always;  /* Добавьте это — предотвращает пропуск секций при быстром скролле */
 }
@@ -37,4 +35,12 @@
     }
 }
 
+.hero{
+    margin-top: 30px;
+}
 
+@media (max-width: 768px){
+    .about{
+        margin: 0 16px !important;
+    }
+}
