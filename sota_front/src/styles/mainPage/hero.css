@@ -146,5 +146,21 @@
     gap: 40px;
   }
 }
+@media (max-height: 800px) {
+  .hero__container {
+    gap: 30px;
+  }
+  .hero__container-main {
+    margin: 100px 66px 100px 66px;
+  }
+  .hero__footer {
+    margin-top: 70px;
+  }
+}
+@media (width: 1440px) and (height: 932px) {
+  .hero__footer {
+    margin-bottom: 30px;
+  }
+}
 
 /*# sourceMappingURL=hero.css.map */

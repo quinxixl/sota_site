@@ -160,6 +160,44 @@
   }
 }
 
+@media (max-height: 1079px) {
+    .services {
+      &__item{
+        height: 620px;
+
+        &:hover &-title {
+          margin-top: 30px;
+        }
+
+        &-subtitle {
+          transform: translateY(0px);
+        }
+
+        &-date{
+          transform: translateY(50px);
+        }
+
+        &:hover &-price {
+          transform: translateY(270px);
+        }
+      }
+
+      &__cta{
+        margin-top: 30px;
+
+        &-img{
+          top: 0;
+          left: 0;
+          position: absolute;
+
+          &-title{
+            position: absolute;
+          }
+        }
+      }
+    }
+}
+
 @media (max-width: 1618px) {
   .services {
     &__subtitle{
@@ -298,13 +336,13 @@
   }
 }
 
-@media (max-height: 769px) {
+@media (max-height: 801px) {
   .services {
     &__item{
-      height: 450px;
+      height: 410px;
 
       &-price{
-        margin-top: 170px;
+        margin-top: 115px;
       }
 
       &:hover &-title {
@@ -312,7 +350,7 @@
       }
 
       &-subtitle {
-        transform: translateY(0px);
+        transform: translateY(40px);
       }
 
       &-date{
