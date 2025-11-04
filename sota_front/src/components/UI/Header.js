@@ -24,10 +24,10 @@ function Header() {
     return (
         <header className="header">
         {isMobile ? (
-            <div>
+            <>
                 <img src = {logo} alt="STA" className="header__logo"/>
                 <button className='header__menu'><img src = {menu}/></button>
-            </div>)
+            </>)
         : (
                 <>
             <nav className="header__nav">

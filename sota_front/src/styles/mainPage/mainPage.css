@@ -24,10 +24,11 @@
     will-change: scroll-position;
 }
 
-.services, .cases {
+.services, .cases, .about{
     height: 100vh !important;
     margin: 0 96px !important;
 }
+
 
 @media (max-width: 1919px) {
     .services, .cases {

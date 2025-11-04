@@ -1,6 +1,4 @@
 .hero{
-  position: relative;
-
   &__container{
     display: flex;
     flex-direction: column;
@@ -24,12 +22,12 @@
     position: relative;
 
     background: linear-gradient(
-      90deg,
-      #FFFFFF 0%,
-      #FFA96A 25%,
-      #FFFFFF 50%,
-      #FFA96A 75%,
-      #FFFFFF 100%
+                    90deg,
+                    #FFFFFF 0%,
+                    #FFA96A 25%,
+                    #FFFFFF 50%,
+                    #FFA96A 75%,
+                    #FFFFFF 100%
     );
     background-size: 200% auto;
     background-clip: text;
@@ -47,12 +45,12 @@
     position: relative;
     align-self: flex-start;
     background: linear-gradient(
-      90deg,
-      #FFFFFF 0%,
-      #FFA96A 25%,
-      #FFFFFF 50%,
-      #FFA96A 75%,
-      #FFFFFF 100%
+                    90deg,
+                    #FFFFFF 0%,
+                    #FFA96A 25%,
+                    #FFFFFF 50%,
+                    #FFA96A 75%,
+                    #FFFFFF 100%
     );
     background-size: 200% auto;
     background-clip: text;
@@ -71,7 +69,6 @@
     position: relative;
     width: 222px;
     height: 100px;
-    pointer-events: none;
 
 
     &-img{
@@ -81,11 +78,7 @@
       clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
       width: 222px;
       height: 100px;
-    }
-
-    &-title{
-      z-index: 1;
-      pointer-events: auto;
+      pointer-events: none;
     }
   }
 
@@ -173,6 +166,13 @@
 }
 
 @media (max-height: 1079px) {
+  .hero{
+    &__container{
+      &-main{
+        margin: 130px 66px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1441px) {
@@ -245,9 +245,5 @@
 }
 
 @media (max-width: 767px) {
-
-}
-
-@media (max-width: 479px) {
 
 }

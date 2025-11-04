@@ -257,7 +257,7 @@
 }
 @media (max-height: 801px) {
   .services__item {
-    height: 410px;
+    height: 450px;
   }
   .services__item-price {
     margin-top: 115px;
