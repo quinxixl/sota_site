@@ -131,6 +131,34 @@
     font-size: 32px;
   }
 }
+@media (max-height: 1079px) {
+  .services__item {
+    height: 620px;
+  }
+  .services__item:hover .services__item-title {
+    margin-top: 30px;
+  }
+  .services__item-subtitle {
+    transform: translateY(0px);
+  }
+  .services__item-date {
+    transform: translateY(50px);
+  }
+  .services__item:hover .services__item-price {
+    transform: translateY(270px);
+  }
+  .services__cta {
+    margin-top: 30px;
+  }
+  .services__cta-img {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  .services__cta-img-title {
+    position: absolute;
+  }
+}
 @media (max-width: 1618px) {
   .services__subtitle {
     font-size: 21px;
@@ -153,7 +181,10 @@
     font-size: 23px;
   }
   .services__item-price {
-    font-size: 26px;
+    font-size: 28px;
+  }
+  .services__item:hover .services__item-price {
+    font-size: 30px;
   }
   .services__item-title {
     font-size: 24px;
@@ -162,10 +193,7 @@
     font-size: 28px;
   }
   .services__item-date {
-    font-size: 34px;
-  }
-  .services__cta {
-    margin-top: 30px;
+    font-size: 30px;
   }
 }
 @media (max-height: 901px) {
@@ -179,10 +207,69 @@
     margin-top: 30px;
   }
   .services__item-subtitle {
-    transform: translateY(-30px);
+    transform: translateY(0px);
   }
   .services__item-date {
-    transform: translateY(-70px);
+    transform: translateY(-30px);
+  }
+  .services__item:hover .services__item-price {
+    transform: translateY(160px);
+  }
+  .services__cta {
+    margin-top: 30px;
+    font-size: 14px;
+    width: 170px;
+    height: 70px;
+  }
+  .services__cta-img {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  .services__cta-img-title {
+    position: absolute;
+    top: 35px;
+    left: 44px;
+  }
+}
+@media (max-width: 1262px) {
+  .services__subtitle {
+    font-size: 15px;
+  }
+  .services__container:hover .services__item:not(:hover) .services__item-price {
+    font-size: 19px;
+  }
+  .services__item-price {
+    font-size: 23px;
+  }
+  .services__item:hover .services__item-price {
+    font-size: 26px;
+  }
+  .services__item-title {
+    font-size: 20px;
+  }
+  .services__item-subtitle {
+    font-size: 24px;
+  }
+  .services__item-date {
+    font-size: 26px;
+  }
+}
+@media (max-height: 801px) {
+  .services__item {
+    height: 410px;
+  }
+  .services__item-price {
+    margin-top: 115px;
+  }
+  .services__item:hover .services__item-title {
+    margin-top: 30px;
+  }
+  .services__item-subtitle {
+    transform: translateY(40px);
+  }
+  .services__item-date {
+    transform: translateY(-30px);
   }
   .services__item:hover .services__item-price {
     transform: translateY(160px);
