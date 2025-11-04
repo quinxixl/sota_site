@@ -159,7 +159,7 @@
     position: absolute;
   }
 }
-@media (max-width: 1618px) {
+@media (max-width: 1670px) {
   .services__subtitle {
     font-size: 21px;
   }
@@ -169,8 +169,17 @@
   .services__item-price {
     font-size: 30px;
   }
+  .services__item:hover .services__item-price {
+    font-size: 32px;
+  }
   .services__item-title {
     font-size: 28px;
+  }
+  .services__item-subtitle {
+    font-size: 28px;
+  }
+  .services__item-date {
+    font-size: 30px;
   }
 }
 @media (max-width: 1441px) {
@@ -255,9 +264,9 @@
     font-size: 26px;
   }
 }
-@media (max-height: 801px) {
+@media (max-height: 800px) {
   .services__item {
-    height: 410px;
+    height: 450px;
   }
   .services__item-price {
     margin-top: 115px;

@@ -198,7 +198,7 @@
     }
 }
 
-@media (max-width: 1618px) {
+@media (max-width: 1670px) {
   .services {
     &__subtitle{
       font-size: 21px;
@@ -213,8 +213,20 @@
         font-size: 30px;
       }
 
+      &:hover &-price{
+        font-size: 32px;
+      }
+
       &-title{
         font-size: 28px;
+      }
+
+      &-subtitle {
+        font-size: 28px;
+      }
+
+      &-date{
+        font-size: 30px;
       }
     }
   }
@@ -336,10 +348,10 @@
   }
 }
 
-@media (max-height: 801px) {
+@media (max-height: 800px) {
   .services {
     &__item{
-      height: 410px;
+      height: 450px;
 
       &-price{
         margin-top: 115px;
