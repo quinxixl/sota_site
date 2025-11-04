@@ -42,6 +42,12 @@
     pointer-events: none;
     justify-self: center;
     z-index: 2;
+    grid-area: logo;
+  }
+
+  &__menu{
+    align-self: center;
+    grid-area: menu;
   }
 
   &__cta{
@@ -117,7 +123,14 @@
 
 /* Мобильные (480px - 767px) */
 @media (max-width: 767px) {
+    .header{
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "- logo menu";
 
+      &__logo{
+        min-width: 132px;
+      }
+    }
 }
 
 /* Маленькие мобильные (до 479px) */

@@ -1,10 +1,35 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import logo from "../../icons/logo.svg";
-import ctaWhite from "../../icons/ctaWhite.svg"
+import ctaWhite from "../../icons/ctaWhite.svg";
+import menu from "../../icons/menu-button.svg";
+
+
+
 
 function Header() {
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () =>
+            window.removeEventListener('resize', handleResize);
+
+    }, []);
+
     return (
         <header className="header">
+        {isMobile ? (
+            <div>
+                <img src = {logo} alt="STA" className="header__logo"/>
+                <button className='header__menu'><img src = {menu}/></button>
+            </div>)
+        : (
+                <>
             <nav className="header__nav">
                 <ul className="header__nav__list">
                     <a href="#" className="header__nav__list-href">
@@ -22,7 +47,9 @@ function Header() {
             <a className="header__cta" href="/application">
                 <img src={ctaWhite} alt="" className="header__cta-img"/>
                 <span className="header__cta-title">начать проект</span>
-            </a>
+            </a> </>
+        )
+        }
         </header>
     )
 }

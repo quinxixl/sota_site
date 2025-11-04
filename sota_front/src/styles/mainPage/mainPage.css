@@ -5,8 +5,7 @@
 
 .hero, .services, .cases, .about {
     height: 100vh !important;
-    margin: 30px 96px 0px 96px !important;
-    padding: 0 !important;
+    margin: 0px 0 0px 0 !important;
     box-sizing: border-box !important;
     position: relative;
     scroll-snap-align: start;  /* Или center, если хотите центрировать секцию в viewport */
@@ -14,6 +13,7 @@
 }
 
 .mainPage {
+    position: relative;
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
@@ -35,12 +35,13 @@
     }
 }
 
-.hero{
-    margin-top: 30px;
-}
 
 @media (max-width: 768px){
     .about{
         margin: 0 16px !important;
     }
+}
+
+.hero{
+    padding-top: 30px;
 }
