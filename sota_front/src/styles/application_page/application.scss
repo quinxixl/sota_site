@@ -76,6 +76,7 @@
             opacity: 0;
             width: 240px;
             height: 74px;
+            z-index: 10;
           }
 
           &-img{
@@ -131,6 +132,7 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            font-family: var(--font-fam);
           }
         }
       }
@@ -173,3 +175,191 @@
   position: absolute;
   opacity: 0;
 }
+
+@media (max-width: 900px){
+  .application{
+    padding-top: 59px;
+    &__main{
+      margin: 64px 17px 0 17px;
+      flex-direction: column;
+      &-title{
+        font-size: 36px;
+        font-family: var(--font-fam);
+        text-transform: uppercase;
+      }
+
+      &-form{
+        margin-top: -2px;
+        display: flex;
+        justify-content: end;
+        &-container{
+          margin-top: 15px;
+          margin-bottom: 102px;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-areas:  "task"
+                                "task-input"
+                                "file-button"
+                                "contact"
+                                "name"
+                                "company"
+                                "email"
+                                "phone"
+                                "url"
+                                "privacy"
+                                "main-button";
+          width: 398px;
+
+          &-input{
+            grid-area: task-input;
+            border-bottom: 2px solid #FFFFFF;
+            width: 398px;
+            height: 40px;
+            margin-bottom: 24px;
+
+
+            &::placeholder{
+              color: #FFFFFF;
+              font-size: 14px;
+              font-family: var(--font-fam2);
+            }
+
+            &-question{
+              font-size: 24px;
+              font-family: var(--font-fam);
+              text-transform: lowercase;
+              font-weight: 300;
+              margin-bottom: 14px;
+              height: 40px;
+            }
+
+            &-2{
+              border-bottom: 2px solid #FFFFFF;
+              width: 398px;
+              height: 40px;
+              margin-bottom: 20px;
+
+              &::placeholder{
+                color: #FFFFFF;
+                font-size: 24px;
+                font-family: var(--font-fam2);
+              }
+            }
+          }
+
+          &-file_button{
+            grid-area: file-button;
+            width: 167px;
+            height: 51px;
+            position: relative;
+            margin-bottom: 24px;
+
+            &-input{
+              position: absolute;
+              opacity: 0;
+              width: 167px;
+              height: 51px;
+              z-index: 10;
+            }
+
+            &-img{
+              position: absolute;
+            }
+
+            &-title{
+              position: absolute;
+              z-index: 1;
+              color: black;
+              font-family: var(--font-fam);
+              font-size: 12px;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              white-space: nowrap;
+            }
+          }
+
+          &-privacy{
+            grid-area: privacy;
+            justify-self: center;
+            width: fit-content;
+            margin-bottom: 28px;
+            text-align: center;
+
+            &-title{
+              font-size: 10px;
+              color: #898887;
+              font-family: var(--font-fam2);
+              height: fit-content;
+              &-link{
+                color: white;
+                text-decoration: underline !important;
+              }
+            }
+          }
+
+          &-button-main{
+            grid-area: main-button;
+            position: relative;
+            height: 50px;
+
+            &-img{
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 50px;
+            }
+
+            &-title{
+              position: absolute;
+              color: black;
+              font-size: 16px;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              text-transform: lowercase;
+              font-family: var(--font-fam);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .name{
+    grid-area: name;
+  }
+
+  .company{
+    grid-area: company;
+    justify-self: start;
+  }
+
+  .email{
+    grid-area: email;
+  }
+
+  .phone{
+    grid-area: phone;
+    justify-self: start;
+  }
+
+  .url{
+    grid-area: url;
+    margin-bottom: 13px;
+  }
+
+  .contact{
+    grid-area: contact;
+  }
+
+  .task{
+    grid-area: task;
+  }
+
+  .error{
+    position: absolute;
+    opacity: 0;
+  }
+}
+
