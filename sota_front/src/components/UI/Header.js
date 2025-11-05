@@ -8,11 +8,11 @@ import menu from "../../icons/menu-button.svg";
 
 function Header() {
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 431);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
+            setIsMobile(window.innerWidth < 431);
         };
 
         window.addEventListener('resize', handleResize);

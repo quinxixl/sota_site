@@ -1,11 +1,32 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import cta from "../../icons/cta.svg";
 import Sota from "../../animations/Sota";
 import Header from "../../components/UI/Header";
 
+
+
 function Hero() {
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 700);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () =>
+            window.removeEventListener('resize', handleResize);
+
+    }, []);
+
     return (
         <div className="hero">
+            {isMobile ? (
+            <div className="hero__container-side">
+                <Header />
+            </div>
+            ) : (
             <div className="hero__container-side">
                 <Sota
                     hexSize={25}
@@ -15,7 +36,9 @@ function Hero() {
                     gapY={18.5}
                 />
                 <Header />
-            </div>
+            </div>)
+
+            }
             <div className="hero__container-main">
                 <div className="hero__container">
                     <p className="hero__title">

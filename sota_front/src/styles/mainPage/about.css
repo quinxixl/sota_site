@@ -6,7 +6,6 @@
   margin: 0 96px;
 }
 .about__title {
-  margin-top: 22px;
   text-align: center;
   font-family: var(--font-fam);
   font-size: var(--font-medium);
@@ -33,7 +32,7 @@
   text-align: center;
   font-family: var(--font-fam2);
   font-size: 40px;
-  margin-top: 22px;
+  margin-top: 10px;
   grid-area: subtitle-main;
 }
 .about__container {
@@ -44,6 +43,10 @@
   gap: 95px;
   z-index: 1;
   padding: 0;
+}
+.about__container-slider {
+  position: relative;
+  align-items: center;
 }
 .about__sota {
   flex: 1;
@@ -257,6 +260,9 @@
     font-size: 36px;
   }
   .about__subtitle {
+    font-size: 27px;
+  }
+  .about__subtitle-2 {
     font-size: 27px;
   }
   .about__subtitle-main {

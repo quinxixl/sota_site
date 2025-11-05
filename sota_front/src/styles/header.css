@@ -100,16 +100,20 @@
 }
 /* Планшеты (768px - 1023px) */
 /* Мобильные (480px - 767px) */
-@media (max-width: 767px) {
+@media (max-width: 430px) {
   .header {
     margin: 0 16px 0 16px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 398px;
   }
   .header__logo {
-    min-width: 132px;
+    max-width: 132px;
+    justify-self: center;
+  }
+  .header__menu {
+    justify-self: end;
   }
 }
-/* Маленькие мобильные (до 479px) */
 
 /*# sourceMappingURL=header.css.map */

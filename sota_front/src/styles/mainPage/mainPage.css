@@ -29,6 +29,17 @@
     margin: 0 96px !important;
 }
 
+.hero{
+    padding-top: 30px;
+}
+
+.services{
+    padding-top: 30px;
+}
+
+.about{
+    padding-top: 30px;
+}
 
 @media (max-width: 1919px) {
     .services, .cases {
@@ -43,6 +54,3 @@
     }
 }
 
-.hero{
-    padding-top: 30px;
-}

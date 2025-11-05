@@ -32,8 +32,8 @@ function CasesPage(){
                 <p className="cases__title">Кейсы</p>
                 <div className="cases__slider">
                     <div className='slider__button'>
-                        <button ref={prevRef} className="prev"><img src={arrow} className='left-arrow'/></button>
-                        <button ref={nextRef} className="next"><img src={arrow} className='right-arrow'/></button>
+                        <button ref={prevRef} className="prev"><img src={arrow} /></button>
+                        <button ref={nextRef} className="next"><img src={arrow} /></button>
                     </div>
                     <Slider prevRef = {prevRef} nextRef = {nextRef}/>
                 </div>

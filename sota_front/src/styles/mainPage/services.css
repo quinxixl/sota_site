@@ -2,7 +2,6 @@
   text-align: center;
 }
 .services__title {
-  margin-top: 20px;
   font-size: var(--font-medium);
   font-family: var(--font-fam);
 }

@@ -2,7 +2,6 @@
   text-align: center;
 
   &__title {
-    margin-top: 20px;
     font-size: var(--font-medium);
     font-family: var(--font-fam);
   }
@@ -89,6 +88,7 @@
       transition-delay: 0s;
     }
   }
+
   &__container:hover .services__item:not(:hover) .services__item-title {
     width: 343px;
     transform: rotate(90deg);

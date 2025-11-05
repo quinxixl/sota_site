@@ -36,6 +36,11 @@ function Slider({prevRef, nextRef}) {
                 }}
                 loop={true}
                 className={'slider__container'}
+                breakpoints={{
+                    0: {slidesPerView: 1, spaceBetween: 0 },
+                    1275: {slidesPerView: 2, spaceBetween: 0 },
+                    1800: {slidesPerView: 3, spaceBetween: 0 }
+                }}
             >
                 {requests.map((item, index) => (
                     <SwiperSlide key={index} className={'slider__container-item'}>
