@@ -1,200 +1,150 @@
-.application {
+.application{
+  padding-top: 30px;
   &__main{
-    margin: 30px 96px;
-  }
-
-  &__privacy{
-    display: flex;
-    justify-content: center;
-    grid-area: privacy;
-  }
-
-
-  &__privacy-policy {
-    height: 19px;
-    font-family: var(--font-fam2);
-    font-size: 13px;
-    margin-top: 13px;
-    color: #898887;
-
-    & a {
-      color: white;
-      text-decoration: underline;
-      text-decoration-color: white;
-    }
-  }
-
-  &__title{
-    font-family: var(--font-fam);
-    font-size: 96px;
-    text-transform: uppercase;
-    margin-top: 62px;
-  }
-
-  &__form {
-    &-button-main{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100px;
-      position: relative;
-      grid-area: button-main;
-      align-self: center;
-      margin-top: 28px;
-
-      &-img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-      }
-
-      &-title{
-        position: absolute;
-        z-index: 3;
-        font-family: var(--font-fam);
-        font-size: 24px;
-        color: black;
-      }
-    }
-
-    &-file_button{
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      width: 240px;
-      height: 74px;
-      grid-area: button-file;
-      margin-top: 24px;
-
-      &-input{
-        position: absolute;
-        opacity: 0;
-        z-index: 2;
-        width: 240px;
-        height: 74px;
-        cursor: pointer;
-      }
-
-      &-title{
-        position: absolute;
-        color: black;
-        font-size: 20px;
-        font-family: var(--font-fam);
-      }
-    }
-
-    &-question {
-      height: 40px;
-      grid-area: question;
+    margin: 62px 96px 0 96px;
+    flex-direction: column;
+    &-title{
+      font-size: 96px;
       font-family: var(--font-fam);
-      font-size: 36px;
-      text-transform: lowercase;
-      font-weight: 300;
+      text-transform: uppercase;
+    }
 
-      &-2 {
-        height: 40px;
-        font-family: var(--font-fam);
-        margin-top: 24px;
-        font-size: 36px;
-        text-transform: lowercase;
-        font-weight: 300;
-        grid-area: question-2;
-      }
-      }
-
-      &-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        margin-top: -3px;
-
-
-        &-grid {
-          display: grid;
-          grid-template-areas:"question question"
-                              "text text"
-                              "button-file button-file"
-                              "question-2 question-2"
-                              "subname company"
+    &-form{
+      margin-top: -2px;
+      display: flex;
+      justify-content: end;
+      &-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:  "task task"
+                              "task-input task-input"
+                              "file-button file-button"
+                              "contact contact"
+                              "name company"
                               "email phone"
                               "url url"
                               "privacy privacy"
-                              "button-main button-main";
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
-
-
-
-
-    &-input {
-      margin-top: 30px;
-      border-bottom: 2px solid white;
-      height: 40px;
-      color: white;
-      font-family: var(--font-fam2);
-      font-size: 24px;
-      grid-area: text;
-
-      &::placeholder {
-        font-family: var(--font-fam2);
-        font-size: 24px;
-        color: white;
-      }
-
-      &-2 {
-        width: 448px;
-        height: 40px;
-        border-bottom: 2px solid white;
-        color: white;
-        font-family: var(--font-fam2);
-        font-size: 24px;
-
-        &::placeholder {
-          color: white;
-          font-family: var(--font-fam2);
-          font-size: 24px;
-
-        }
-      }
-
-      &-3{
-        margin-top: 42px;
-        border-bottom: 2px solid white;
+                              "main-button main-button";
         width: 998px;
-        height: 40px;
-        color: white;
-        font-family: var(--font-fam2);
-        font-size: 24px;
-        grid-area: url;
 
-        &::placeholder {
-          color: white;
-          font-family: var(--font-fam2);
-          font-size: 24px;
+        &-input{
+          grid-area: task-input;
+          border-bottom: 2px solid #FFFFFF;
+          width: 998px;
+          height: 40px;
+          margin-bottom: 24px;
+
+
+          &::placeholder{
+            color: #FFFFFF;
+            font-size: 24px;
+            font-family: var(--font-fam2);
+          }
+
+          &-question{
+            font-size: 36px;
+            font-family: var(--font-fam);
+            text-transform: lowercase;
+            font-weight: 300;
+            margin-bottom: 30px;
+            height: 40px;
+           }
+
+          &-2{
+            border-bottom: 2px solid #FFFFFF;
+            width: 448px;
+            height: 40px;
+            margin-bottom: 42px;
+
+            &::placeholder{
+              color: #FFFFFF;
+              font-size: 24px;
+              font-family: var(--font-fam2);
+            }
+          }
+        }
+
+        &-file_button{
+          grid-area: file-button;
+          width: 240px;
+          height: 74px;
+          position: relative;
+          margin-bottom: 24px;
+
+          &-input{
+            position: absolute;
+            opacity: 0;
+            width: 240px;
+            height: 74px;
+          }
+
+          &-img{
+            position: absolute;
+          }
+
+          &-title{
+            position: absolute;
+            z-index: 1;
+            color: black;
+            font-family: var(--font-fam);
+            font-size: 20px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+          }
+        }
+
+        &-privacy{
+          grid-area: privacy;
+          justify-self: center;
+          width: fit-content;
+          margin-bottom: 28px;
+
+          &-title{
+            font-size: 13px;
+            color: #898887;
+            font-family: var(--font-fam2);
+            height: fit-content;
+            &-link{
+              color: white;
+              text-decoration: underline !important;
+            }
+          }
+        }
+
+        &-button-main{
+          grid-area: main-button;
+          position: relative;
+          height: 100px;
+
+          &-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+
+          &-title{
+            position: absolute;
+            color: black;
+            font-size: 24px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
         }
       }
     }
   }
-
-
-
 }
 
-.subname{
-  grid-area: subname;
-  margin-top: 30px;
-  margin-bottom: 42px;
+.name{
+  grid-area: name;
 }
 
 .company{
   grid-area: company;
-  margin-top: 30px;
-  margin-bottom: 42px;
-  margin-left: 50px;
+  justify-self: end;
 }
 
 .email{
@@ -202,46 +152,24 @@
 }
 
 .phone{
-  grid-area: phone;
-  margin-left: 50px;
+ grid-area: phone;
+  justify-self: end;
+}
+
+.url{
+ grid-area: url;
+  margin-bottom: 13px;
+}
+
+.contact{
+  grid-area: contact;
+}
+
+.task{
+  grid-area: task;
 }
 
 .error{
-  padding: 10px;
   position: absolute;
-  border: 2px solid #A91111;
-  font-size: 14px;
-  font-family: var(--font-fam2);
-
-  &__task-description{
-    margin-top: 61px;
-    margin-left: 586-18px;
-  }
-
-  &__fullname{
-    margin-top: 289px;
-    margin-left: 107px;
-  }
-
-  &__company-name{
-    margin-top: 289px;
-    margin-left: 676px;
-  }
-
-  &__email{
-    width: 374px;
-    height: 39px;
-    margin-top: 375px;
-    margin-left: 73px;
-  }
-
-  &__phone-number{
-    margin-top: 371px;
-    margin-left: 711px;
-  }
-
-  &__site-url{
-    margin-top: 453px;
-    margin-left: 564px;
-  }
+  opacity: 0;
 }

@@ -1,158 +1,126 @@
+.application {
+  padding-top: 30px;
+}
 .application__main {
-  margin: 30px 96px;
+  margin: 62px 96px 0 96px;
+  flex-direction: column;
 }
-.application__privacy {
-  display: flex;
-  justify-content: center;
-  grid-area: privacy;
-}
-.application__privacy-policy {
-  height: 19px;
-  font-family: var(--font-fam2);
-  font-size: 13px;
-  margin-top: 13px;
-  color: #898887;
-}
-.application__privacy-policy a {
-  color: white;
-  text-decoration: underline;
-  text-decoration-color: white;
-}
-.application__title {
-  font-family: var(--font-fam);
+.application__main-title {
   font-size: 96px;
+  font-family: var(--font-fam);
   text-transform: uppercase;
-  margin-top: 62px;
 }
-.application__form-button-main {
+.application__main-form {
+  margin-top: -2px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  position: relative;
-  grid-area: button-main;
-  align-self: center;
-  margin-top: 28px;
+  justify-content: end;
 }
-.application__form-button-main-img {
+.application__main-form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "task task" "task-input task-input" "file-button file-button" "contact contact" "name company" "email phone" "url url" "privacy privacy" "main-button main-button";
+  width: 998px;
+}
+.application__main-form-container-input {
+  grid-area: task-input;
+  border-bottom: 2px solid #FFFFFF;
+  width: 998px;
+  height: 40px;
+  margin-bottom: 24px;
+}
+.application__main-form-container-input::placeholder {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: var(--font-fam2);
+}
+.application__main-form-container-input-question {
+  font-size: 36px;
+  font-family: var(--font-fam);
+  text-transform: lowercase;
+  font-weight: 300;
+  margin-bottom: 30px;
+  height: 40px;
+}
+.application__main-form-container-input-2 {
+  border-bottom: 2px solid #FFFFFF;
+  width: 448px;
+  height: 40px;
+  margin-bottom: 42px;
+}
+.application__main-form-container-input-2::placeholder {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: var(--font-fam2);
+}
+.application__main-form-container-file_button {
+  grid-area: file-button;
+  width: 240px;
+  height: 74px;
+  position: relative;
+  margin-bottom: 24px;
+}
+.application__main-form-container-file_button-input {
+  position: absolute;
+  opacity: 0;
+  width: 240px;
+  height: 74px;
+}
+.application__main-form-container-file_button-img {
+  position: absolute;
+}
+.application__main-form-container-file_button-title {
+  position: absolute;
+  z-index: 1;
+  color: black;
+  font-family: var(--font-fam);
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.application__main-form-container-privacy {
+  grid-area: privacy;
+  justify-self: center;
+  width: fit-content;
+  margin-bottom: 28px;
+}
+.application__main-form-container-privacy-title {
+  font-size: 13px;
+  color: #898887;
+  font-family: var(--font-fam2);
+  height: fit-content;
+}
+.application__main-form-container-privacy-title-link {
+  color: white;
+  text-decoration: underline !important;
+}
+.application__main-form-container-button-main {
+  grid-area: main-button;
+  position: relative;
+  height: 100px;
+}
+.application__main-form-container-button-main-img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
 }
-.application__form-button-main-title {
-  position: absolute;
-  z-index: 3;
-  font-family: var(--font-fam);
-  font-size: 24px;
-  color: black;
-}
-.application__form-file_button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 240px;
-  height: 74px;
-  grid-area: button-file;
-  margin-top: 24px;
-}
-.application__form-file_button-input {
-  position: absolute;
-  opacity: 0;
-  z-index: 2;
-  width: 240px;
-  height: 74px;
-  cursor: pointer;
-}
-.application__form-file_button-title {
+.application__main-form-container-button-main-title {
   position: absolute;
   color: black;
-  font-size: 20px;
-  font-family: var(--font-fam);
-}
-.application__form-question {
-  height: 40px;
-  grid-area: question;
-  font-family: var(--font-fam);
-  font-size: 36px;
-  text-transform: lowercase;
-  font-weight: 300;
-}
-.application__form-question-2 {
-  height: 40px;
-  font-family: var(--font-fam);
-  margin-top: 24px;
-  font-size: 36px;
-  text-transform: lowercase;
-  font-weight: 300;
-  grid-area: question-2;
-}
-.application__form-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-top: -3px;
-}
-.application__form-container-grid {
-  display: grid;
-  grid-template-areas: "question question" "text text" "button-file button-file" "question-2 question-2" "subname company" "email phone" "url url" "privacy privacy" "button-main button-main";
-  grid-template-columns: repeat(2, 1fr);
-}
-.application__form-input {
-  margin-top: 30px;
-  border-bottom: 2px solid white;
-  height: 40px;
-  color: white;
-  font-family: var(--font-fam2);
   font-size: 24px;
-  grid-area: text;
-}
-.application__form-input::placeholder {
-  font-family: var(--font-fam2);
-  font-size: 24px;
-  color: white;
-}
-.application__form-input-2 {
-  width: 448px;
-  height: 40px;
-  border-bottom: 2px solid white;
-  color: white;
-  font-family: var(--font-fam2);
-  font-size: 24px;
-}
-.application__form-input-2::placeholder {
-  color: white;
-  font-family: var(--font-fam2);
-  font-size: 24px;
-}
-.application__form-input-3 {
-  margin-top: 42px;
-  border-bottom: 2px solid white;
-  width: 998px;
-  height: 40px;
-  color: white;
-  font-family: var(--font-fam2);
-  font-size: 24px;
-  grid-area: url;
-}
-.application__form-input-3::placeholder {
-  color: white;
-  font-family: var(--font-fam2);
-  font-size: 24px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.subname {
-  grid-area: subname;
-  margin-top: 30px;
-  margin-bottom: 42px;
+.name {
+  grid-area: name;
 }
 
 .company {
   grid-area: company;
-  margin-top: 30px;
-  margin-bottom: 42px;
-  margin-left: 50px;
+  justify-self: end;
 }
 
 .email {
@@ -161,41 +129,25 @@
 
 .phone {
   grid-area: phone;
-  margin-left: 50px;
+  justify-self: end;
+}
+
+.url {
+  grid-area: url;
+  margin-bottom: 13px;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.task {
+  grid-area: task;
 }
 
 .error {
-  padding: 10px;
   position: absolute;
-  border: 2px solid #A91111;
-  font-size: 14px;
-  font-family: var(--font-fam2);
-}
-.error__task-description {
-  margin-top: 61px;
-  margin-left: 568px;
-}
-.error__fullname {
-  margin-top: 289px;
-  margin-left: 107px;
-}
-.error__company-name {
-  margin-top: 289px;
-  margin-left: 676px;
-}
-.error__email {
-  width: 374px;
-  height: 39px;
-  margin-top: 375px;
-  margin-left: 73px;
-}
-.error__phone-number {
-  margin-top: 371px;
-  margin-left: 711px;
-}
-.error__site-url {
-  margin-top: 453px;
-  margin-left: 564px;
+  opacity: 0;
 }
 
 /*# sourceMappingURL=application.css.map */

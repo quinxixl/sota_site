@@ -109,6 +109,7 @@
   }
   .header__logo {
     max-width: 132px;
+    min-width: 132px;
     justify-self: center;
   }
   .header__menu {

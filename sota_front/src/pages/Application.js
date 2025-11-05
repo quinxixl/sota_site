@@ -77,92 +77,83 @@ function Application() {
         <div className='application'>
             <Header />
             <div className='application__main'>
-                <p className='application__title'>Собрать улей</p>
-                <div className='application__form-container'>
-                    <form
-                        className='application__form-container-grid'
+                <p className='application__main-title'>Собрать улей</p>
+                <div className='application__main-form'>
+                    <form className='application__main-form-container'
                         onSubmit={sendForm}
                         noValidate
                     >
-                        <p className='application__form-question'>Задача:</p>
-                        <input
+                        <p className='application__main-form-container-input-question task'>Задача:</p>
+                        <input className='application__main-form-container-input'
                             type="text"
                             name="task_description"
                             placeholder='опишите задачу в свободной форме'
-                            className='application__form-input'
                             onChange={onChange}
                             onFocus={() => onFocusError('task_description')}
                             value={form.task_description}
                         />
                         {errors.task_description && <div className="error__task-description error">{errors.task_description}</div>}
-                        <div className='application__form-file_button'>
-                            <input
+                        <div className='application__main-form-container-file_button'>
+                            <input className="application__main-form-container-file_button-input"
                                 type="file"
-                                className="application__form-file_button-input"
                             />
-                            <img src={ctaWhite} alt="" />
-                            <span className="application__form-file_button-title">Прикрепить файл</span>
+                            <img src={ctaWhite} alt="" className='application__main-form-container-file_button-img'/>
+                            <p className="application__main-form-container-file_button-title">Прикрепить файл</p>
                         </div>
-                        <p className='application__form-question-2'>контактные данные:</p>
-                        <input
+                        <p className='application__main-form-container-input-question contact'>контактные данные:</p>
+                        <input className='application__main-form-container-input-2 name'
                             type='text'
                             name='fullname'
                             placeholder='фио'
-                            className='application__form-input-2 subname'
                             onChange={onChange}
                             onFocus={() => onFocusError('fullname')}
                             value={form.fullname}
                         />
                         {errors.fullname && <div className="error__fullname error">{errors.fullname}</div>}
-                        <input
+                        <input className='application__main-form-container-input-2 company'
                             type='text'
                             name='company_name'
                             placeholder='компания'
-                            className='application__form-input-2 company'
                             onChange={onChange}
                             onFocus={() => onFocusError('company_name')}
                             value={form.company_name}
                         />
                         {errors.company_name && <div className="error__company-name error">{errors.company_name}</div>}
-                        <input
+                        <input className='application__main-form-container-input-2 email'
                             type="email"
                             name="email"
                             placeholder='e-mail'
-                            className='application__form-input-2 email'
                             onChange={onChange}
                             onFocus={() => onFocusError('email')}
                             value={form.email}
                         />
                         {errors.email && <div className="error__email error">{errors.email}</div>}
-                        <input
+                        <input className='application__main-form-container-input-2 phone'
                             type='tel'
                             name='phone_number'
                             placeholder='телефон'
-                            className='application__form-input-2 phone'
                             onChange={onChange}
                             onFocus={() => onFocusError('phone_number')}
                             value={form.phone_number}
                         />
                         {errors.phone_number && <div className="error__phone-number error">{errors.phone_number}</div>}
-                        <input
+                        <input className='application__main-form-container-input url'
                             type='text'
                             name='site_url'
                             placeholder='url(например, сайт компании)'
-                            className='application__form-input-3'
                             onChange={onChange}
                             onFocus={() => onFocusError('site_url')}
                             value={form.site_url}
                         />
                         {errors.site_url && <div className="error__site-url error">{errors.site_url}</div>}
-                        <div className='application__privacy'>
-                            <p className='application__privacy-policy'>
-                                нажимая кнопку „отправить”, вы даете <a href='' className='application__link'>согласие</a>
-                                на обработку персональных данных. <a href='' className='application__link'>политика обработки данных</a>
+                        <div className='application__main-form-container-privacy'>
+                            <p className='application__main-form-container-privacy-title'>
+                                нажимая кнопку „отправить”, вы даете <a href='' className='application__main-form-container-privacy-title-link'>согласие</a> на обработку персональных данных. <a href='' className='application__main-form-container-privacy-title-link'>политика обработки данных</a>
                             </p>
                         </div>
-                        <button type="submit" className='application__form-button-main'>
-                            <img src={ctaWhiteButton} alt="" className='application__form-button-main-img' />
-                            <span className="application__form-button-main-title">Отправить</span>
+                        <button type="submit" className='application__main-form-container-button-main'>
+                            <img src={ctaWhiteButton} alt="" className='application__main-form-container-button-main-img'/>
+                            <p className="application__main-form-container-button-main-title">Отправить</p>
                         </button>
                     </form>
                 </div>
