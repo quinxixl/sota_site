@@ -21,7 +21,7 @@ function Hero() {
     }, []);
 
     return (
-        <div className="hero">
+        <div className="hero" id = 'hero'>
             {isMobile ? (
             <div className="hero__container-side">
                 <Header />
@@ -56,9 +56,12 @@ function Hero() {
                     </span>
                 </div>
                 <div className="hero__footer">
-                    <a href="#" className="hero__footer-details">
+                    <p className="hero__footer-details"
+                    onClick={() => {
+                        document.getElementById('services').scrollIntoView({behavior: "smooth"});
+                    }}>
                         Подробнее
-                    </a>
+                    </p>
                     <span className="hero__footer-copyright">
                     ©2025
                     </span>

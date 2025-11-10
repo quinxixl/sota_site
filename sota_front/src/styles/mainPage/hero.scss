@@ -119,6 +119,7 @@
     &-details{
       position: relative;
       transition: all 0.3s ease;
+      cursor: pointer;
     }
     &-details:hover{
       color: #ff984d;

@@ -108,6 +108,7 @@
   font-size: var(--font-min);
   margin-bottom: 45px;
   text-align: left;
+  cursor: pointer;
 }
 
 .date {

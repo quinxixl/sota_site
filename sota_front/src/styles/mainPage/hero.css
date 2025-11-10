@@ -85,6 +85,7 @@
 .hero__footer-details {
   position: relative;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .hero__footer-details:hover {
   color: #ff984d;

@@ -28,7 +28,7 @@ function CasesPage(){
     }
 
     return (
-            <div className="cases">
+            <div className="cases" id = 'cases'>
                 <p className="cases__title">Кейсы</p>
                 <div className="cases__slider">
                     <div className='slider__button'>
@@ -41,10 +41,11 @@ function CasesPage(){
                     <img src={cta} alt="" className="cases__cta-img"/>
                     <span>Заказать</span>
                 </button>
-                <p className="cases__about ">
-                    <a href="#">
-                        О команде
-                    </a>
+                <p className="cases__about "
+                   onClick={() => {
+                       document.getElementById('about').scrollIntoView({behavior: "smooth"});
+                   }}>
+                    О команде
                 </p>
             </div>
     )

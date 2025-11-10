@@ -8,7 +8,7 @@ function Services() {
 
     handleClick(navigate);
     return (
-        <div className='services'>
+        <div className='services' id = 'services'>
             <p className="services__title">
                 Услуги
             </p>
@@ -117,10 +117,11 @@ function Services() {
                 <img src={cta} alt="" className="services__cta-img"/>
                 <span className='services__cta-img-title'>Заказать</span>
             </button>
-            <p className="services__examples">
-                <a href="#">
-                    Примеры
-                </a>
+            <p className="services__examples"
+               onClick={() => {
+                   document.getElementById('cases').scrollIntoView({behavior: "smooth"});
+               }}>
+                Примеры
             </p>
         </div>
 

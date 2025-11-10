@@ -20,6 +20,7 @@
   font-size: 24px;
   position: relative;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .header__nav__list-item:hover {
   color: #ff984d;

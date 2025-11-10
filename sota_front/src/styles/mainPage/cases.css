@@ -41,6 +41,7 @@
   position: absolute;
   bottom: 30px;
   align-items: start;
+  cursor: pointer;
 }
 
 .border {

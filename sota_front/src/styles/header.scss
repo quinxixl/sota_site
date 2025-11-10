@@ -19,6 +19,7 @@
       font-size: 24px;
       position: relative;
       transition: all 0.3s ease;
+      cursor: pointer;
     }
     &-item:hover{
       color: #ff984d;
@@ -127,21 +128,21 @@
 
 /* Мобильные (480px - 767px) */
 @media (max-width: 430px) {
-    .header{
-      margin: 0 16px 0 16px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      width: 398px;
+  .header{
+    margin: 0 16px 0 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 398px;
 
-      &__logo{
-        max-width: 132px;
-        min-width: 132px;
-        justify-self: center;
-      }
-
-      &__menu{
-        justify-self: end;
-      }
+    &__logo{
+      max-width: 132px;
+      min-width: 132px;
+      justify-self: center;
     }
+
+    &__menu{
+      justify-self: end;
+    }
+  }
 }
 

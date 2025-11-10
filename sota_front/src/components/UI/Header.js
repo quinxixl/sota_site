@@ -32,13 +32,22 @@ function Header() {
                 <>
             <nav className="header__nav">
                 <ul className="header__nav__list">
-                    <a href="#" className="header__nav__list-href">
+                    <a className="header__nav__list-href"
+                       onClick={() => {
+                           document.getElementById('services').scrollIntoView({behavior: "smooth"});
+                       }}>
                         <li className="header__nav__list-item">Услуги</li>
                     </a>
-                    <a href="#" className="header__nav__list-href">
+                    <a className="header__nav__list-href"
+                       onClick={() => {
+                           document.getElementById('cases').scrollIntoView({behavior: "smooth"});
+                       }}>
                         <li className="header__nav__list-item">Кейсы</li>
                     </a>
-                    <a href="#" className="header__nav__list-href">
+                    <a className="header__nav__list-href"
+                       onClick={() => {
+                           document.getElementById('about').scrollIntoView({behavior: "smooth"});
+                       }}>
                         <li className="header__nav__list-item">О нас</li>
                     </a>
                 </ul>

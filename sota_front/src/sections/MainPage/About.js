@@ -26,7 +26,7 @@ function About () {
     }, []);
 
     return (
-        <div className='about'>
+        <div className='about' id = 'about'>
             <p className="about__title">
                 О нас
             </p>
